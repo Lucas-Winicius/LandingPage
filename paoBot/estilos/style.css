@@ -222,9 +222,14 @@ section p {
 
 
 #seta {
-    padding-top: 90px;
+    padding-top: 80px;
     margin: auto;
     width: 50px;
-    animation: anim-stars 2s linear infinite;
+}
+
+.setapause{
+    animation: anim-stars 1s infinite;
+    animation-delay: 0.4s;
     display: block;
 }
+
