@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+/*
+A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
+*/
 @keyframes animacao {
     from {color:#0e1015;}
     to {color:#d1d4dd}
 }
 
 
+
+
+
 header {
     background-color:  #0e1015;
     color: #d1d4dd;
-    height: 600px;
-    
+    height: 600px;    
 }
+
+
+
 
 
 .container {
@@ -22,43 +30,78 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+
 h1, 
 h2,
 p {
     font-weight: bold;
-    
 }
+
+
+
+
 
 h1,
 h2 {
     font-size: 2.6em;
 }
 
+
+
+
+
 p {
     color: #6d7383;
-   
 }
 
 
+
+
+
+/*
+CONFIGURAÇÕES DO NAVBAR---
+*/
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
     margin-left: 0;
 }
 
+
+
+
+/*
+A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA PARA AJUDAR NA RESPONSIVIDADE EM TELAS MENORES QUE 422PX , 'CELULAR'
+*/
 @media(min-width: 422px) {
     .navbar-brand {
         margin-left: 110px;
     }
 }
+
+
+
+
+
 nav {
     border-bottom: 1px solid #2e2e31;
 }
+
+
+
+
 
 #item-nav {
     color: #d1d4dd;
     font-weight: bold;
 }
+
+
+
+
 
 button {
     border-style: none;
@@ -73,14 +116,28 @@ button {
     margin-right: 10px;
 }
 
+
+
+
+
 #colorDIFF {
     background-color: #ffc164;
 }
+
+
+
+
 
 b {
     color: #d1d4dd;
 }
 
+
+
+
+/*
+AJUSTES NA ANIMAÇÃO DO CARREGAMENTO DO SITE----
+*/
 p,
 b {
     animation-name: animacao;
