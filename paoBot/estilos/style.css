@@ -3,6 +3,17 @@
 /*
 A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 */
+@keyframes anim-stars {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(90px);
+       
+    }
+}
+
+
 @keyframes animacao {
     from {color:#0e1015;}
     to {color:#d1d4dd}
@@ -194,4 +205,26 @@ section p {
     background-color:  #0e1015;
     border-bottom: 1px solid  #2e2e31;
     
+}   
+
+.PAO {
+    float: right;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 340px;
+}
+@media (min-width:420px){
+    .PAO {
+        max-width: 300px;
+    }
+}
+
+
+#seta {
+    padding-top: 90px;
+    margin: auto;
+    width: 50px;
+    animation: anim-stars 2s linear infinite;
+    display: block;
 }
