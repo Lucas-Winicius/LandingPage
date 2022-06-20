@@ -191,6 +191,6 @@ section p {
     position: fixed;
     top: 0px;
     background-color:  #0e1015;
-    border: 1px solid  #2e2e31;
+    border-bottom: 1px solid  #2e2e31;
     
 }
