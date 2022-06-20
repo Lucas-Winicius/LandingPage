@@ -45,6 +45,7 @@ header {
 
 
 
+
 h1, 
 h2,
 p {
@@ -204,7 +205,7 @@ section p {
 .menuFixo {
     position: fixed;
     top: 0px;
-    background-color:  #0e1015;
+    background-color:  #0b0d11;
     border-bottom: 1px solid  #2e2e31;
     
 }   
