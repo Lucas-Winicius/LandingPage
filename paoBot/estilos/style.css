@@ -75,6 +75,10 @@ CONFIGURAÇÕES DO NAVBAR---
     margin-left: 0;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 
 
 
@@ -183,7 +187,10 @@ section p {
     text-align: center left;
     
 }
-
-#container-section {
+.menuFixo {
+    position: fixed;
+    top: 0px;
+    background-color:  #0e1015;
+    border: 1px solid  #2e2e31;
     
 }
