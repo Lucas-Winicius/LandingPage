@@ -43,8 +43,14 @@ p {
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
+    margin-left: 0;
 }
 
+@media(min-width: 422px) {
+    .navbar-brand {
+        margin-left: 110px;
+    }
+}
 nav {
     border-bottom: 1px solid #2e2e31;
 }
