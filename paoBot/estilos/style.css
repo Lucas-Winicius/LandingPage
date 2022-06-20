@@ -24,7 +24,7 @@ header {
 
 .container {
     text-align: center left;
-    padding-top: 60px;
+    padding-top: 80px;
     animation-name: animacao;
     animation-duration: 2s;
     font-family: 'Roboto', sans-serif;
@@ -114,6 +114,15 @@ button {
     background-color: #3f444e;
     letter-spacing: 1px;
     margin-right: 10px;
+    transition: 0.2s
+}
+
+
+
+
+
+button:hover {
+    background-color: #252930;
 }
 
 
@@ -122,6 +131,14 @@ button {
 
 #colorDIFF {
     background-color: #ffc164;
+}
+
+
+
+
+
+#colorDIFF:hover {
+    background-color: #b18544;
 }
 
 
@@ -142,4 +159,24 @@ p,
 b {
     animation-name: animacao;
     animation-duration: 3s;
+}
+
+
+section {
+    background-color: #e9ebf1;
+    padding-top: 70px;
+    font-size: 1.2em;
+}
+
+section h3 {
+    text-align: center;
+    color: #b18544;
+}
+
+section p {
+    text-align: center left;
+}
+
+#container-section {
+    
 }
