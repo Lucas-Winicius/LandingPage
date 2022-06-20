@@ -1,3 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@keyframes animacao {
+    from {color:#0e1015;}
+    to {color:#d1d4dd}
+}
+
+
 header {
-    background-color: aqua;
+    background-color:  #0e1015;
+    color: #d1d4dd;
+    height: 600px;
+    
+}
+
+
+.container {
+    text-align: center left;
+    padding-top: 60px;
+    animation-name: animacao;
+    animation-duration: 2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, 
+h2,
+p {
+    font-weight: bold;
+    
+}
+
+h1,
+h2 {
+    font-size: 2.6em;
+}
+
+p {
+    color: #6d7383;
+   
+}
+
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+nav {
+    border-bottom: 1px solid #2e2e31;
+}
+
+#item-nav {
+    color: #d1d4dd;
+    font-weight: bold;
+}
+
+button {
+    border-style: none;
+    padding: 13px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: #3f444e;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+#colorDIFF {
+    background-color: #ffc164;
+}
+
+b {
+    color: #d1d4dd;
+}
+
+p,
+b {
+    animation-name: animacao;
+    animation-duration: 3s;
 }
