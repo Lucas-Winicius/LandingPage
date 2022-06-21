@@ -14,6 +14,7 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 }
 
 
+
 @keyframes animacao {
     from {color:#0e1015;}
     to {color:#d1d4dd}
@@ -25,6 +26,8 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 header {
     background-image: url(../img/fundoheader.jpg);
+    
+    
     color: #d1d4dd;
     height: 600px;    
 }
@@ -186,11 +189,12 @@ b {
 
 
 section {
-    background-color: #e9ebf1;
+    background-image: url(../img/fundosection.jpg);
     padding-top: 70px;
     font-size: 1.2em;
    
 }
+
 
 section h3 {
     text-align: center;
@@ -241,4 +245,13 @@ section p {
     animation-delay: 0.4s;
     display: block;
 }
+
+
+
+#criador {
+  
+   width: 140px;
+   margin-left: 37vw;
+}
+
 
