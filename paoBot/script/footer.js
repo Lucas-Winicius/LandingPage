@@ -8,52 +8,48 @@ const footer = () => {
 
     elementFooter.setAttribute('style', 'text-align: center; background-color: #14161d; color: white; padding: 4px; font-size: 0.8rem; font-weight: bolder;')
 
-    if (dataContent.mes == 0 && dataContent.dia == 1) {
-        elementFooter.innerHTML = `Feliz Ano Novo&#x1F389;`
-    }
-     
-    else if(dataContent.mes == 1) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F389;`
-    } 
+    elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}${emojis[randint(0, emojis.length - 1)]}`
 
-    else if(dataContent.mes == 2 && dataContent.dia == 8) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F469;`
-    } 
+    switch(dataContent.mes) {
 
-    else if(dataContent.mes == 3) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F407;`
-    } 
+        case 0:
+            if(dataContent.dia == 1) { elementFooter.innerHTML = `Feliz Ano Novo&#x1F389;` }
+            break
 
-    else if(dataContent.mes == 4 && dataContent.dia == 8) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F931;`
-    } 
+        case 1:
+            elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F389;`
+            break
 
-    else if(dataContent.mes == 5 && dataContent.dia == 12) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F498;`
-    } 
+        case 2:
+            if(dataContent.dia == 8) { elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F469;` }
+            break
 
-    else if(dataContent.mes == 7) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F468;`
-    } 
+        case 3:
+            elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F407;`
+            break
 
-    else if(dataContent.mes == 9 && dataContent.dia == 12) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F9D2;`
-    } 
+        case 4:
+            if(dataContent.dia == 8) { elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F931;` }
+            break
 
-    else if(dataContent.mes == 11 && dataContent.dia == 25) {
-        elementFooter.innerHTML = `Feliz Natal&#x1F384;`
-    }
+        case 5:
+            if(dataContent.dia == 12) { elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F498;` }
+            break
 
-    else if(dataContent.mes == 11 && dataContent.dia == 31) {
-        elementFooter.innerHTML = `Vespera de Ano Novo&#x1F38A;`
-    } 
+        case 7:
+            elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F468;`
+            break
 
-    else if(dataContent.mes == 11) {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F385;`
-    } 
+        case 9:
+            if(dataContent.dia == 12) { elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F9D2;` }
+            break
 
-    else {
-        elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}${emojis[randint(0, emojis.length - 1)]}`
+        case 11:
+            elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F385;`
+            if(dataContent.dia == 25) { elementFooter.innerHTML = `Feliz Natal&#x1F384;` }
+            if(dataContent.dia == 31) { elementFooter.innerHTML = `Vespera de Ano Novo&#x1F38A;` }
+            break
+    
     }
 
 }
