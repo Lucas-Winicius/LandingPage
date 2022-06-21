@@ -48,15 +48,15 @@ const footer = () => {
             elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}&#x1F385;`
             if(dataContent.dia == 25) { elementFooter.innerHTML = `Feliz Natal&#x1F384;` }
             if(dataContent.dia == 31) { elementFooter.innerHTML = `Vespera de Ano Novo&#x1F38A;` }
-            break
-    
+            break  
+            
+        default:
+            if(randint(0, 10000) == 2) { elementFooter.innerHTML = `OMG! VOCÊ ESTÁ VENDO UM TEXTO RARO, SE CONSIDERE UMA PESSOA DE SORTE!!!` }
+
     }
-
 }
 
-function randint(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
+let randint = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
 footer()
 
@@ -70,11 +70,11 @@ footer()
  * abr - 3
  * mai - 4
  * jun - 5
- * jul - 6
+ * jul - 6 *
  * ago - 7
- * set - 8
+ * set - 8 *
  * out - 9
- * nov - 10
+ * nov - 10 *
  * dez - 11
  */
 
