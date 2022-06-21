@@ -26,7 +26,7 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 header {
     background-image: url(../img/fundoheader.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: left top;
     color: #d1d4dd;
     height: 600px;    
@@ -190,7 +190,7 @@ b {
 
 section {
     background-image: url(../img/fundosection.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding-top: 70px;
     padding-bottom: 80px;
     font-size: 1.2em;
