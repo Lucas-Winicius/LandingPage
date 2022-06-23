@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 /*
 A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 */
@@ -25,22 +27,36 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 
 header {
-    background-image: url(../img/fundoheader.jpg);
+    background-image:  url(../img/fundoheaderM.jpg);
+   
     /* background-attachment: fixed; */
-    background-position: left top;
-    color: #d1d4dd;
+  
+    color: white;
     height: 600px;    
+    text-align: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color:  #272934;;
+    background-position: left top;
+   
 }
 
+@media(min-width: 900px) {
+    header {
+        background-image: url(../img/fundoheader55.jpg);
+        text-align: unset;
+}
 
+}
 
 
 
 .container {
     text-align: center left;
-    padding-top: 100px;
+    padding-top: 80px;
     animation-name: animacao;
-    animation-duration: 2s;
+    animation-duration: 0.6s;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -57,15 +73,20 @@ p {
 
 
 
-
-
-h1,
-h2 {
+.container h1 {
     font-size: 2em;
 }
 
+.container h2 {
+    font-size: 1.7em;
+}
+
 @media(min-width: 420px) {
-    h2 {
+    .container h1 {
+        font-size: 3em;
+    }
+
+    .container h2 {
         font-size: 2.6em;
     }
 }
@@ -74,7 +95,7 @@ h2 {
 
 
 p {
-    color: #6d7383;
+    color: #8a91a3;
 }
 
 
@@ -86,8 +107,11 @@ CONFIGURAÇÕES DO NAVBAR---
 */
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-left: 0;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
 }
 
 .navbar-toggler {
@@ -111,7 +135,7 @@ A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA 
 
 
 nav {
-    border-bottom: 1px solid #2e2e31;
+    border-bottom: 1px solid #393c4b;
 }
 
 
@@ -119,23 +143,26 @@ nav {
 
 
 #item-nav {
-    color: #d1d4dd;
-    font-weight: bold;
+    color: #9093a1;;
+    
+}
+
+#item-nav:hover {
+    color:#cacee2;;
 }
 
 
 
 
-
-button {
+.estilobutt {
     border-style: none;
-    padding: 13px;
+    padding: 16px;
     outline: none;
     border: none;
-    border-radius: 4px;
-    font-weight: bold;
+    border-radius: 7px;
+    
     color: white;
-    background-color: #3f444e;
+    background-color: #fab752;
     letter-spacing: 1px;
     margin-right: 10px;
     transition: 0.2s;
@@ -147,8 +174,8 @@ button {
 
 
 
-button:hover {
-    background-color: #252930;
+.estilobutt:hover {
+    background-color: #b38137;
 }
 
 
@@ -156,7 +183,7 @@ button:hover {
 
 
 #colorDIFF {
-    background-color: #ffc164;
+    background-color: #3e404d;
 }
 
 
@@ -164,7 +191,7 @@ button:hover {
 
 
 #colorDIFF:hover {
-    background-color: #b18544;
+    background-color:#494c5c;
 }
 
 
@@ -172,6 +199,7 @@ button:hover {
 
 
 b {
+    
     color: #d1d4dd;
 }
 
@@ -181,11 +209,6 @@ b {
 /*
 AJUSTES NA ANIMAÇÃO DO CARREGAMENTO DO SITE----
 */
-p,
-b {
-    animation-name: animacao;
-    animation-duration: 3s;
-}
 
 
 section {
@@ -194,13 +217,17 @@ section {
     padding-top: 70px;
     padding-bottom: 80px;
     font-size: 1.2em;
+    padding: 50px;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
    
 }
 
 
 section h3 {
     text-align: center;
-    color: #b18544;
+    color: #7386f5;
     font-size: 1.8em;
 }
 
@@ -211,8 +238,8 @@ section p {
 .menuFixo {
     position: fixed;
     top: 0px;
-    background-color:  #0b0d11;
-    border-bottom: 1px solid  #2e2e31;
+    background-color:  #1c1d25;
+    border-bottom: 1px solid  #343644;
     
 }   
 
@@ -250,10 +277,60 @@ section p {
 
 
 
-#criador {
+
+
+#login-estilo {
+    background-color:  unset;
+    border-radius: 0;
+    width: 0;
+    text-align: unset;
+}
+
+#item-nav {
+    margin-right: 0;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+@media(min-width:900px) {
+    #login-estilo {
+        background-color:  #7386f5;
+        border-radius: 7px;
+        width: 100px;
+        text-align: center;
+    }
+
+    #item-nav {
+        margin-right: 7px;
+    }
+
+    .navbar-brand {
+        margin-right: 500px;
+    }
+}
+
+
+article {
+    background-color: #1f2029;
+    height: 230px;
+    color: white;
+    text-align:center;
+    font-family: 'Staatliches', cursive;
+    
+    
+}
+
+.container-article {
+    padding-top: 30px;
   
-   width: 140px;
-   margin-left: 37vw;
+    
+}
+
+.container-article h1 {
+    font-size: 1.7em;
+    padding: 20px;
 }
 
 
