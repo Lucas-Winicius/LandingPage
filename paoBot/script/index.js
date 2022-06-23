@@ -11,11 +11,25 @@ const getLoggin = () => {
         document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
     }
     else {
-        userName = 
+        userName = inputElement.value
         console.log(userName)
         document.querySelector('body').id = inputElement.value
-        location.href = 'index.html'
     }
+}
+
+const openPage = (url) => {
+
+    let xml = new XMLHttpRequest()
+
+    xml.onreadystatechange = function() {
+        if(xml.readyState == 4 && xml.status == 200) {
+            document.querySelector('body').innerHTML = xml.responseText
+        }
+    }
+
+    xml.open("GET", url, true)
+
+    xml.send()
 }
 
 const userLoad = () => {
@@ -39,4 +53,10 @@ const seta = () => {
 
 // Ativa as funcoes
 window.addEventListener('scroll', function() {seta(), navBar()})
-window.addEventListener('load', userLoad())
+window.addEventListener('change', userLoad())
+
+// Loop
+
+setInterval(() => {
+    userLoad()
+}, 1);
