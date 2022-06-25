@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+body {
+    background-color:  #272934;
+}
+
 /*
 A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 */
@@ -31,7 +35,7 @@ header {
    
     /* background-attachment: fixed; */
   
-    color: white;
+    color:#dce1ec;
     height: 600px;    
     text-align: center;
     background-attachment: fixed;
@@ -354,4 +358,10 @@ article {
     #criador {
         margin-right: 400px;
     }
+}
+
+
+#loading {
+    text-align: center;
+    margin-top: 20vw;
 }
