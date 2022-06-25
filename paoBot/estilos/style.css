@@ -27,7 +27,7 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 
 header {
-    background-image:  url(../img/fundoheaderatual.png);
+    background-image:  url(../img/fundoheaderM.jpg);
    
     /* background-attachment: fixed; */
   
@@ -37,14 +37,14 @@ header {
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color:  #272934;;
+    background-color:  #272934;
     background-position: left top;
    
 }
 
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheader55.jpg);
+        background-image: url(../img/fundoheaderatual.png);
         text-align: unset;
 }
 
@@ -112,6 +112,7 @@ CONFIGURAÇÕES DO NAVBAR---
     font-weight: bold;
     font-size: 1.4em;
     text-transform: uppercase;
+    text-shadow: 1px 1px 20px  #636b9981;
 }
 
 .navbar-toggler {
@@ -212,7 +213,7 @@ AJUSTES NA ANIMAÇÃO DO CARREGAMENTO DO SITE----
 
 
 section {
-    background-image: url(../img/fundosection.jpg);
+    background-color:  #272934;
     /* background-attachment: fixed; */
     padding-top: 70px;
     padding-bottom: 80px;
@@ -224,14 +225,19 @@ section {
    
 }
 
+section h5 {
+    color:  #e0e4fc;;
+}
 
 section h3 {
     text-align: center;
     color: #7386f5;
+    font-weight: bold;
     font-size: 1.8em;
 }
 
 section p {
+    color: #c9cddb;
     text-align: center left;
     
 }
@@ -314,9 +320,9 @@ section p {
 
 article {
     background-color: #1f2029;
-    height: 230px;
+    height: 140px;
     color: white;
-    text-align:center;
+  text-align: center;
     font-family: 'Staatliches', cursive;
     
     
@@ -334,3 +340,18 @@ article {
 }
 
 
+#criador {
+    float: right;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 186px;
+    margin-right: 0;
+}
+
+
+@media(min-width:1000px) {
+    #criador {
+        margin-right: 400px;
+    }
+}
