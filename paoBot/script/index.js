@@ -6,7 +6,7 @@ const botaoAdicionar = () => {
 }
 
 // Pegar login
-function getLoggin() {
+const getLoggin = () => {
     const inputElement = document.querySelector('#user')
     if(inputElement.value == '') {
         document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
@@ -47,7 +47,7 @@ const openPage = (url) => {
     xml.send()
 }
 
-function userLoad() {
+const userLoad = () => {
     document.querySelector('#userName').innerHTML = userName
 }
 

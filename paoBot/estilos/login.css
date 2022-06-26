@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    color: white;
 }
 
 body {
-    background-color: #404040;
-    background-image: url("../img/fundo_login.jpg");
+    background-color: #272935;
     background-position: center center;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    height: 79vh;
 }
 
 h1 {
@@ -21,39 +21,33 @@ h1 {
 #user {
     display: block;
     margin: auto;
-    background-color: rgba(169, 169, 169, 0);
-    border: 1px solid rgb(83, 83, 83);
+    background-color: #494C5C;
+    border: none;
     padding: 20px;
     border-radius: 50px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-input {
-    display: block;
-    border: 1px solid rgb(83, 83, 83);
-    border-right: none;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 20px;
-    width: 150px;
-    border-radius: 50px 0px 0px 50px;
-    padding-right: 0px;
-}
-
 button {
     display: block;
     border: 1px solid rgb(83, 83, 83);
-    background-color: rgba(0, 162, 255, 0);
+    background-color: #fab752;
     padding: 0px;
     width: 190px;
     height: 55px;
     border-radius: 50px;
     margin: auto;
+    transition: 300ms;
+}
+
+button:hover {
+    background-color: #B38137;
 }
 
 ::placeholder {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 #conteiner {
@@ -62,5 +56,5 @@ button {
     margin-top: 10vw;
     padding: 70px 50px;
     border-radius: 25px;
-    background-color: #3a3a3a2f;
+    background-color: #303548;
 }
