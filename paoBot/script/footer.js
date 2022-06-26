@@ -10,6 +10,8 @@ const footer = () => {
 
     elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}${emojis[randint(0, emojis.length - 1)]}`
 
+    console.log(dataContent)
+
     switch(dataContent.mes) {
 
         case 0:
