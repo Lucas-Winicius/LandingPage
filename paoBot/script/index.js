@@ -32,6 +32,8 @@ const getLoggin = () => {
     }
 }
 
+
+// Abrir o conteudo das paginas desejadas
 const openPage = (url) => {
 
     let xml = new XMLHttpRequest()
@@ -47,9 +49,12 @@ const openPage = (url) => {
     xml.send()
 }
 
+
+// Carrega o Nome do usuario
 const userLoad = () => {
     document.querySelector('#userName').innerHTML = userName
 }
+
 
 // NavBarConfig
 const navBar = () => {

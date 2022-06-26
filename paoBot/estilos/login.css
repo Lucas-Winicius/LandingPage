@@ -51,7 +51,7 @@ button:hover {
 }
 
 #conteiner {
-    width: max-content;
+    max-width: max-content;
     margin: auto;
     margin-top: 10vw;
     padding: 70px 50px;
