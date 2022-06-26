@@ -271,6 +271,9 @@ section p {
     padding-top: 40px;
     margin: auto;
     width: 50px;
+    animation: anim-stars 1s infinite;
+    animation-delay: 0.4s;
+    
 }
 
 @media(min-width:420px) {
@@ -280,12 +283,8 @@ section p {
 }
 
 .setapause{
-    animation: anim-stars 1s infinite;
-    animation-delay: 0.4s;
-    display: block;
+  display: none;
 }
-
-
 
 
 
