@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 
 body {
     background-color:  #272934;
@@ -89,17 +93,13 @@ header {
     animation-name: animacao;
     animation-duration: 0.6s;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 
 
 
 
-h1, 
-h2,
-#p-header {
-    font-weight: bold;
-}
 
 
 
@@ -107,6 +107,8 @@ h2,
 
 .container h1 {
     font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -123,7 +125,7 @@ h2,
 
 @media(min-width: 950px) {
     .container h1 {
-        font-size: 3em;
+        font-size: 3.3em;
     }
 
     .container h2 {
@@ -218,6 +220,7 @@ nav {
     margin-right: 10px;
     transition: 0.2s;
     margin-bottom: 10px;
+    width: 230px;
 }
 
 
@@ -234,6 +237,8 @@ nav {
 
 #colorDIFF {
     background-color: #3e404d;
+    width: 140px;
+
 }
 
 
@@ -395,8 +400,13 @@ section p {
     border-radius: 0;
     width: 0;
     text-align: unset;
+    transition: 0.2s;
 }
 
+
+#login-estilo:hover {
+    background-color:  #8b9cfd;
+}
 
 
 
@@ -422,8 +432,9 @@ section p {
     #login-estilo {
         background-color:  #7386f5;
         border-radius: 7px;
-        width: 100px;
+        width: 90px;
         text-align: center;
+        cursor: pointer;
     }
 
     

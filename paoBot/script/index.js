@@ -72,6 +72,14 @@ const seta = () => {
 }
 
 
+//Elemento para desativar a SETA ao clicar no botão do nav em telas pequenas  
+function setaOff() {
+  if (seta) {
+    let seta = document.querySelector('#seta')
+    seta.classList.add('setapause')
+  } 
+}
+
 // Ativa as funcoes
 window.addEventListener('scroll', function() {seta(), navBar()})
 window.addEventListener('change', userLoad())

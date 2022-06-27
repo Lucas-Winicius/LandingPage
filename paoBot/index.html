@@ -28,7 +28,7 @@
   <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #272934;" >
     <div id="menu" class="container-fluid">
       <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" src="img/1206235.png" alt=""> PãoBot.</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button onclick="setaOff()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,8 +40,12 @@
             <a id="item-nav"  class="nav-link" href="#">Nosso Servidor</a>
           </li>
           <li class="nav-item">
+            <a id="item-nav"  class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
             <a id="item-nav"  class="nav-link" href="#">Suporte</a>
           </li>
+        
           <li class="nav-item" id="login-estilo">
             <a id="item-nav"  class="nav-link" onclick="openPage('./content/login.html')"><p id="userName" style="display: inline; color: #D1D4DD;"></p></a>
           </li>
@@ -52,14 +56,13 @@
 
 
     <header>
+      
       <div class="container">
-        <h1>Olá, eu sou o <b style="color:#7386f5; text-decoration: underline #FEBC66;">Pão Bot</b>
-        <br>  O bot mais carismático <br> do<b style="color: #7a44f8;"> Discord</b> :)
-        </h1>
+      <h1>Chegou a hora <br> de  transformar <br> o seu servidor! <br></h1>
        
         <p id="p-header">Se você procura automatização, diversão  <br> e funcionalidades,
-        seja <b>bem-vindo</b> você está no lugar certo!</p>
-        <button class="estilobutt" onclick="botaoAdicionar()">Adicionar no meu Servidor</button>
+        seja <b>bem-vindo</b> você veio ao lugar certo!</p>
+        <button class="estilobutt" onclick="botaoAdicionar()">Adicionar ao Servidor</button>
         <button class="estilobutt" id="colorDIFF">Saiba Mais</button>
       </div>
       <div id="seta" class="setapause">
