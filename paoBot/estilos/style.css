@@ -241,8 +241,14 @@ section {
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-left: 100px;
+    margin-left: 0;
    
+}
+
+@media(min-width:1000px) {
+    section {
+        margin-left: 100px;
+    }
 }
 
 section h5 {
@@ -299,8 +305,9 @@ section p {
     width: 50px;
     animation: anim-stars 1s infinite;
     animation-delay: 0.4s;
-    
+    display: none;
 }
+
 
 @media(min-width:420px) {
     #seta {
