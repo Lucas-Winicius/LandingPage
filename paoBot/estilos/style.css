@@ -27,7 +27,18 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 }
 
 
+/* Scroll */
+::-webkit-scrollbar {
+    width: 5px;
+}
 
+::-webkit-scrollbar-track {
+    background-color: #1c1d25;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #343644;
+}
 
 
 header {
