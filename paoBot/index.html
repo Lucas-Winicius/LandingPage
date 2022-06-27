@@ -13,9 +13,17 @@
 </head>
 <body>
   <div id="loading" style="display: block">
-    <img src="http://media.giphy.com/media/FwviSlrsfa4aA/giphy.gif" style="width:150px;height:150px;" />
+    <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
 </div>
-
+<div id="conteudo" style="display: none">
   <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #272934;" >
     <div id="menu" class="container-fluid">
       <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" src="img/1206235.png" alt=""> PãoBot.</a>
@@ -42,45 +50,47 @@
           </li>
         </ul>
       </nav>
-  </div>
-    <header>
-      <div class="container">
-      <h1>Chegou a hora <br> de  transformar <br> o seu servidor! <br></h1>
-        <p id="p-header">Se você procura automatização, diversão  <br> e funcionalidades,
-        seja <b>bem-vindo</b> você veio ao lugar certo!</p>
-        <button class="estilobutt" onclick="botaoAdicionar()">Adicionar ao Servidor</button>
-        <button class="estilobutt" id="colorDIFF">Saiba Mais</button>
-      </div>
-      <div id="seta" class="setapause" style="display: block;">
-        <img width="60px" src="img/arrasta.png" alt="seta">
-      </div>
-    </header>
-    <article>
-      <div class="container-article">
-        <div id="foto-creator">
-          <a href="https://www.instagram.com/sr_pumpkin_/" target="_blank"><img id="criador" width="100px"
-              src="img/logolucas.png" alt="criador"></a>
+      <header>
+        <div class="container">
+        <h1>Chegou a hora <br> de  transformar <br> o seu servidor! <br></h1>
+          <p id="p-header">Se você procura automatização, diversão  <br> e funcionalidades,
+          seja <b>bem-vindo</b> você veio ao lugar certo!</p>
+          <button class="estilobutt" onclick="botaoAdicionar()">Adicionar ao Servidor</button>
+          <button class="estilobutt" id="colorDIFF">Saiba Mais</button>
         </div>
-        <h1>O criador por trás de mim /></h1>
-      </div>
-    </article>
-    <section>
-      <h3>A mudança começa aqui.</h3>
-      <h5>Todos os servidores precisam de entretenimento e diversão para a sua comunidade <br>
-        só que uma pessoa atendendo a vontade de várias é meio complicado né?
-      </h5>
-      <p>Uma hora vamos cansar e quem vai garantir o entretenimento e diversão <br> para minha comunidade?
-        é ai que eu entro :)
-      </p>
-      <p>Com minhas diversas funcionalidades posso trazer tudo o que seu servidor precisa!
-        <br> além de mim possuir abilidades moderativas fazendo seu servidor ser seguro e agradável, <br> posso cuidar
-        da diversão dos seus membros deixando voçê livre para descansar.
-      </p>
-    </section>
-
-    <footer></footer>
- 
+        <div id="seta" class="setapause" style="display: block;">
+          <img width="60px" src="img/arrasta.png" alt="seta">
+        </div>
+      </header>
+      <article>
+        <div class="container-article">
+          <div id="foto-creator">
+            <a href="https://www.instagram.com/sr_pumpkin_/" target="_blank"><img id="criador" width="100px"
+                src="img/logolucas.png" alt="criador"></a>
+          </div>
+          <h1>O criador por trás de mim /></h1>
+        </div>
+      </article>
+      <section>
+        <h3>A mudança começa aqui.</h3>
+        <h5>Todos os servidores precisam de entretenimento e diversão para a sua comunidade <br>
+          só que uma pessoa atendendo a vontade de várias é meio complicado né?
+        </h5>
+        <p>Uma hora vamos cansar e quem vai garantir o entretenimento e diversão <br> para minha comunidade?
+          é ai que eu entro :)
+        </p>
+        <p>Com minhas diversas funcionalidades posso trazer tudo o que seu servidor precisa!
+          <br> além de mim possuir abilidades moderativas fazendo seu servidor ser seguro e agradável, <br> posso cuidar
+          da diversão dos seus membros deixando voçê livre para descansar.
+        </p>
+      </section>
+      <footer></footer>
+  </div>
     
+ 
+
+
+  
     
 
   <script src="script/footer.js"></script>
@@ -88,5 +98,4 @@
   <script src="script/load.js"></script>
  
 </body>
-
 </html>

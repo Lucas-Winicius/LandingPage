@@ -6,4 +6,5 @@ var i = setInterval(function () {
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 
-}, 4000);
+}, 2000);
+
