@@ -78,17 +78,7 @@ setTimeout(() => {
     userLoad()
 }, 2000)
 
-// Manipular seta
-const manipularSeta = () => {
-    const seta = document.querySelector('#seta')
-    const style = getComputedStyle(seta)
 
-    if (style.display == 'block') {
-        seta.setAttribute('style', 'display: none')
-    } else {
-        seta.setAttribute('style', 'display: block')
-    }
-}
 
 //Elemento para desativar a SETA ao clicar no botão do nav em telas pequenas  
 function setaOff() {
