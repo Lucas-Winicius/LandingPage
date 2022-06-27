@@ -9,6 +9,10 @@ body {
     background-color:  #272934;
 }
 
+
+
+
+
 /*
 A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 */
@@ -24,10 +28,15 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 
 
+
+
 @keyframes animacao {
     from {color:#0e1015;}
     to {color:#d1d4dd}
 }
+
+
+
 
 
 /* Scroll */
@@ -44,11 +53,11 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 }
 
 
+
+
+
 header {
     background-image:  url(../img/fundoheaderM.jpg);
-   
-    /* background-attachment: fixed; */
-  
     color:#eff2fa;
     height: 600px;    
     text-align: center;
@@ -57,16 +66,20 @@ header {
     background-repeat: no-repeat;
     background-color:  #272934;
     background-position: left top;
-   
 }
+
+
+
+
 
 @media(min-width: 900px) {
     header {
         background-image: url(../img/fundoheaderatual.png);
         text-align: unset;
 }
-
 }
+
+
 
 
 
@@ -82,7 +95,6 @@ header {
 
 
 
-
 h1, 
 h2,
 #p-header {
@@ -91,15 +103,25 @@ h2,
 
 
 
+
+
 .container h1 {
     font-size: 2em;
 }
+
+
+
+
 
 .container h2 {
     font-size: 1.7em;
 }
 
-@media(min-width: 420px) {
+
+
+
+
+@media(min-width: 950px) {
     .container h1 {
         font-size: 3em;
     }
@@ -108,6 +130,7 @@ h2,
         font-size: 2.6em;
     }
 }
+
 
 
 
@@ -133,9 +156,14 @@ CONFIGURAÇÕES DO NAVBAR---
     text-shadow: 1px 1px 20px  #636b9981;
 }
 
+
+
+
+
 .navbar-toggler {
     border: none;
 }
+
 
 
 
@@ -166,9 +194,14 @@ nav {
     
 }
 
+
+
+
+
 #item-nav:hover {
     color:#cacee2;;
 }
+
 
 
 
@@ -179,14 +212,12 @@ nav {
     outline: none;
     border: none;
     border-radius: 7px;
-    
     color: white;
     background-color:#FEBC66;
     letter-spacing: 1px;
     margin-right: 10px;
     transition: 0.2s;
     margin-bottom: 10px;
-
 }
 
 
@@ -225,14 +256,9 @@ b {
 
 
 
-/*
-AJUSTES NA ANIMAÇÃO DO CARREGAMENTO DO SITE----
-*/
-
 
 section {
     background-color:  #272934;
-    /* background-attachment: fixed; */
     padding-top: 70px;
     padding-bottom: 80px;
     margin-top: 100px;
@@ -242,8 +268,11 @@ section {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 0;
-   
 }
+
+
+
+
 
 @media(min-width:1000px) {
     section {
@@ -251,9 +280,17 @@ section {
     }
 }
 
+
+
+
+
 section h5 {
     color:  #e0e4fc;;
 }
+
+
+
+
 
 section h3 {
     text-align: center ;
@@ -265,6 +302,9 @@ section h3 {
 }
 
 
+
+
+
 @media(min-width: 1000px) {
     section h3 {
         text-align: unset;
@@ -272,11 +312,20 @@ section h3 {
     }
 }
 
+
+
+
+
 section p {
     color: #c9cddb;
     text-align: center left;
     
 }
+
+
+
+
+
 .menuFixo {
     position: fixed;
     top: 0px;
@@ -285,6 +334,10 @@ section p {
     
 }   
 
+
+
+
+
 .PAO {
     float: right;
     border: transparent thin solid;
@@ -292,11 +345,19 @@ section p {
     margin: 0px 10px 10px 0;
     max-width: 340px;
 }
+
+
+
+
+
 @media (min-width:420px){
     .PAO {
         max-width: 300px;
     }
 }
+
+
+
 
 
 #seta {
@@ -305,8 +366,10 @@ section p {
     width: 50px;
     animation: anim-stars 1s infinite;
     animation-delay: 0.4s;
-    display: none;
 }
+
+
+
 
 
 @media(min-width:420px) {
@@ -315,9 +378,15 @@ section p {
     }
 }
 
+
+
+
+
 .setapause{
   display: none;
 }
+
+
 
 
 
@@ -328,13 +397,26 @@ section p {
     text-align: unset;
 }
 
+
+
+
+
+
 #item-nav {
     margin-right: 0;
 }
 
+
+
+
+
 .navbar-brand {
     margin-right: 0;
 }
+
+
+
+
 
 @media(min-width:900px) {
     #login-estilo {
@@ -344,14 +426,21 @@ section p {
         text-align: center;
     }
 
+    
     #item-nav {
         margin-right: 7px;
     }
 
+
     .navbar-brand {
         margin-right: 500px;
     }
+
+
 }
+
+
+
 
 
 article {
@@ -360,21 +449,28 @@ article {
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    
-    
 }
+
+
+
+
 
 .container-article {
     padding-top: 30px;
-    
 }
+
+
+
+
 
 .container-article h1 {
     font-size: 1.5em;
     padding: 20px;
     margin-top: 10px;
-
 }
+
+
+
 
 
 #criador {
@@ -387,11 +483,17 @@ article {
 }
 
 
+
+
+
 @media(min-width:1000px) {
     #criador {
         margin-right: 400px;
     }
 }
+
+
+
 
 
 #loading {
