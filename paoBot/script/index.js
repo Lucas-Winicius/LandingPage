@@ -71,13 +71,6 @@ const seta = () => {
     else { seta.classList.remove('setapause') }
 }
 
-// Função de carregamento
-setTimeout(() => {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("conteudo").style.display = "inline";
-    userLoad()
-}, 2000)
-
 
 
 //Elemento para desativar a SETA ao clicar no botão do nav em telas pequenas  
