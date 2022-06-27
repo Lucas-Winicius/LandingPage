@@ -8,7 +8,7 @@ const botaoAdicionar = () => {
 // Pegar login
 const getLoggin = () => {
     const inputElement = document.querySelector('#user')
-    if(inputElement.value == '') {
+    if (inputElement.value == '') {
         document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
     }
     else {
@@ -20,13 +20,13 @@ const getLoggin = () => {
         let i = setInterval(function () {
 
             clearInterval(i);
-        
+
             document.getElementById("loading").style.display = "none";
             document.getElementById("conteudo").style.display = "inline";
-        
+
         }, 2000);
 
-        setTimeout(function() {
+        setTimeout(function () {
             userLoad()
         }, 2000)
     }
@@ -38,8 +38,8 @@ const openPage = (url) => {
 
     let xml = new XMLHttpRequest()
 
-    xml.onreadystatechange = function() {
-        if(xml.readyState == 4 && xml.status == 200) {
+    xml.onreadystatechange = function () {
+        if (xml.readyState == 4 && xml.status == 200) {
             document.querySelector('body').innerHTML = xml.responseText
         }
     }
@@ -59,7 +59,7 @@ const userLoad = () => {
 // NavBarConfig
 const navBar = () => {
     let menu = document.querySelector('#menu')
-    if(window.scrollY > 0 ) { menu.classList.add('menuFixo') }
+    if (window.scrollY > 0) { menu.classList.add('menuFixo') }
     else { menu.classList.remove('menuFixo') }
 }
 
@@ -67,11 +67,28 @@ const navBar = () => {
 // Config Da Seta
 const seta = () => {
     let seta = document.querySelector('#seta')
-    if(window.scrollY > 300) { seta.classList.add('setapause') }
+    if (window.scrollY > 300) { seta.classList.add('setapause') }
     else { seta.classList.remove('setapause') }
 }
 
+// Função de carregamento
+setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+    userLoad()
+}, 2000)
+
+// Manipular seta
+const manipularSeta = () => {
+    const seta = document.querySelector('#seta')
+    const style = getComputedStyle(seta)
+
+    if (style.display == 'block') {
+        seta.setAttribute('style', 'display: none')
+    } else {
+        seta.setAttribute('style', 'display: block')
+    }
+}
 
 // Ativa as funcoes
-window.addEventListener('scroll', function() {seta(), navBar()})
-window.addEventListener('change', userLoad())
+window.addEventListener('scroll', function () { seta(), navBar() })
