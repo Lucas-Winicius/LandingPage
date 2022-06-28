@@ -32,6 +32,18 @@ const getLoggin = () => {
     }
 }
 
+//loading pag inicial
+var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+
+}, 1000);
+
+
+
 
 // Abrir o conteudo das paginas desejadas
 const openPage = (url) => {

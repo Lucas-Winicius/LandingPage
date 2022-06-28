@@ -13,6 +13,7 @@
  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+  <!--TELA DE LOADING-->
   <div id="loading" style="display: block">
     <div class="spinner-grow text-light" role="status">
         <span class="visually-hidden">Loading...</span>
@@ -24,7 +25,9 @@
         <span class="visually-hidden">Loading...</span>
       </div>
 </div>
+<!--CONTEUDO AONDE ELE VAI FICAR INVISIVEL ATÉ 2 SEGUNDOS PARA A ANIMAÇÃO DO LOADING-->
 <div id="conteudo" style="display: none">
+  <!--NAVBAR-->
   <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #272934;" >
     <div id="menu" class="container-fluid">
       <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" src="img/1206235.png" alt=""> PãoBot.</a>
@@ -45,13 +48,13 @@
           <li class="nav-item">
             <a id="item-nav"  class="nav-link" href="#">Suporte</a>
           </li>
-        
           <li class="nav-item" id="login-estilo">
-            <a id="item-nav"  class="nav-link" onclick="openPage('./content/login.html')"><p id="userName" style="display: inline; color: #D1D4DD;"></p>login</a>
+            <a id="item-nav"  class="nav-link" onclick="openPage('./content/login.html')"><p id="userName" style="display: inline; color: #f8f8fa;">login</p></a>
           </li>
         </ul>
       </nav>
       <header>
+        <!--TODO O CONTEUDO DO HEADER-->
         <div class="container">
         <h1>Chegou a hora <br> de  transformar <br> o seu servidor! <br></h1>
           <p id="p-header">Se você procura automatização, diversão  <br> e funcionalidades,
@@ -63,6 +66,7 @@
           <img width="60px" src="img/arrasta.png" alt="seta">
         </div>
       </header>
+      <!--AQUI FICARA OS SERVIDORES AONDE O BOT ESTÁ ON (modificação ainda não inicializada)-->
       <article>
         <div class="container-article">
           <div id="foto-creator">
@@ -85,18 +89,18 @@
           da diversão dos seus membros deixando voçê livre para descansar.
         </p>
       </section>
+
+
+
       <footer></footer>
+
+
+
   </div>
     
  
-
-
-  
-    
-
   <script src="script/footer.js"></script>
-<script src="script/index.js"></script>
-  <script src="script/load.js"></script>
+  <script src="script/index.js"></script>
  
 </body>
 </html>
