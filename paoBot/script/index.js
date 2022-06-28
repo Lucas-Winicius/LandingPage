@@ -86,11 +86,11 @@ const seta = () => {
 
 
 //Elemento para desativar a SETA ao clicar no botão do nav em telas pequenas  
-function setaOff() {
-  if (seta) {
-    let seta = document.querySelector('#seta')
-    seta.classList.add('setapause')
-  } 
+const setaOff = () => {
+    const seta = document.querySelector('#seta')
+    const style = getComputedStyle(seta)
+    if(style.display == 'block') { seta.setAttribute('style', 'display: none;') }
+    else { seta.setAttribute('style', 'display: block;') }
 }
 
 // Ativa as funcoes
