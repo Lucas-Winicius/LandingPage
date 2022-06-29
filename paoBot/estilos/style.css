@@ -506,3 +506,30 @@ ul {
     color: #8a91a3;
     
 }
+
+
+aside {
+    margin-top: 200px;
+    height: 500px;
+}
+
+.container-aside {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.container-aside h1 {
+    color: #7386f5;
+    font-weight: bold;
+}
+
+
+#tt {
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 330px;
+    margin-left: 20%;
+    margin-top: -75px;
+}
