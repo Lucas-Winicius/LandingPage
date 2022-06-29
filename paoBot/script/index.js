@@ -79,7 +79,7 @@ const navBar = () => {
 // Config Da Seta
 const seta = () => {
     let seta = document.querySelector('#seta')
-    if (window.scrollY > 300) { seta.classList.add('setapause') }
+    if (window.scrollY > 430) { seta.classList.add('setapause') }
     else { seta.classList.remove('setapause') }
 }
 

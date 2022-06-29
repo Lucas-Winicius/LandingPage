@@ -65,11 +65,10 @@ header {
     color:#eff2fa;
     height: 600px;    
     text-align: center;
-    background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color:  #272934;
-    background-position: left top;
+    background-position: center;
 }
 
 
@@ -89,7 +88,7 @@ header {
 
 .container {
     text-align: center left;
-    padding-top: 80px;
+    padding-top: 120px;
     animation-name: animacao;
     animation-duration: 0.6s;
     font-family: 'Roboto', sans-serif;
@@ -271,6 +270,7 @@ section {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 0;
+    
 }
 
 
@@ -454,19 +454,17 @@ section p {
 
 article {
     background-color: #1f2029;
-    height: 140px;
+    height: 310px;
     color: white;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
+    margin-top: 90px;
+    text-align: center;
+    padding: 40px;
 }
 
 
 
 
-
-.container-article {
-    padding-top: 30px;
-}
 
 
 
@@ -481,25 +479,16 @@ article {
 
 
 
+.imagem{
+    margin: auto;
+    width: 50px;
+  }
+  
+  #recursoA{
+    width: 100%;
+    padding-left: -400px;
+  }
 
-#criador {
-    float: right;
-    border: transparent thin solid;
-    padding: 5px;
-    margin: 0px 10px 10px 0;
-    max-width: 186px;
-    margin-right: 0;
-}
-
-
-
-
-
-@media(min-width:1000px) {
-    #criador {
-        margin-right: 400px;
-    }
-}
 
 
 
@@ -511,3 +500,9 @@ article {
 }
 
 
+ul {
+    list-style: none;
+    margin: auto;
+    color: #8a91a3;
+    
+}
