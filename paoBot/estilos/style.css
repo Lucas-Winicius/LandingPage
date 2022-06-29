@@ -511,11 +511,20 @@ ul {
 aside {
     margin-top: 200px;
     height: 500px;
+    padding: 30px;
 }
 
 .container-aside {
     text-align: right;
-    margin-right: 100px;
+    margin-right: 0;
+}
+
+@media(min-width: 1000px) {
+    .container-aside {
+        margin-right: 100px;
+    }
+
+    
 }
 
 .container-aside h1 {
@@ -529,7 +538,15 @@ aside {
     border: transparent thin solid;
     padding: 5px;
     margin: 0px 10px 10px 0;
-    max-width: 330px;
-    margin-left: 20%;
-    margin-top: -75px;
+    max-width: 70%;
+    margin-left: 13%;
+    margin-top: -120px;
+    margin-right: 50px;
+}
+
+
+@media(min-width: 1000px) {
+    #tt {
+        max-width: 35%;
+    }
 }
