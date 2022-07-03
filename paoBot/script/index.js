@@ -84,7 +84,6 @@ const seta = () => {
 }
 
 
-
 //Elemento para desativar a SETA ao clicar no botão do nav em telas pequenas  
 const setaOff = () => {
     const seta = document.querySelector('#seta')

@@ -40,7 +40,16 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 }
 
 
-
+@keyframes slide {
+    0%  {
+        transform: scale(0, 0) translateY(0);
+    }
+    
+    15%, 70% {
+        transform: scale(1, 1) translateY(0);
+    }
+    
+}
 
 
 /* Scroll */
@@ -77,7 +86,7 @@ header {
 
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheaderatual.png);
+        background-image: url(../img/fundoheaderdeff.png);
         text-align: unset;
 }
 }
@@ -258,6 +267,14 @@ b {
 }
 
 
+.containeranimation {
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+
+
 
 section {
     background-color:  #272934;
@@ -270,7 +287,8 @@ section {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 0;
-    
+    text-align: center;
+   
 }
 
 
@@ -280,6 +298,7 @@ section {
 @media(min-width:1000px) {
     section {
         margin-left: 100px;
+        text-align: unset;
     }
 }
 
@@ -509,23 +528,16 @@ ul {
 
 
 aside {
-    margin-top: 200px;
+    margin-top: 20vw;
     height: 500px;
     padding: 30px;
 }
 
 .container-aside {
-    text-align: right;
+    text-align: center;
     margin-right: 0;
 }
 
-@media(min-width: 1000px) {
-    .container-aside {
-        margin-right: 100px;
-    }
-
-    
-}
 
 .container-aside h1 {
     color: #7386f5;
@@ -533,20 +545,37 @@ aside {
 }
 
 
+aside p {
+    color: #c9cddb;
+}
+
+
 #tt {
-    float: left;
+    float: unset;
     border: transparent thin solid;
-    padding: 5px;
-    margin: 0px 10px 10px 0;
-    max-width: 70%;
-    margin-left: 13%;
-    margin-top: -120px;
-    margin-right: 50px;
+    padding: unset;
+    margin: auto;
+    max-width: 90%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 
 @media(min-width: 1000px) {
     #tt {
         max-width: 35%;
+        padding: 5px;
+        margin: 0px 10px 10px 0;
+        margin-left: 13%;
+        margin-top: -120px;
+        margin-right: 50px;
+        float: left;
     }
+
+    .container-aside {
+        text-align: right;
+        margin-right: 100px;
+    }
+
 }
