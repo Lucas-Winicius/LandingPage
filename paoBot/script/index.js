@@ -33,13 +33,9 @@ const getLoggin = () => {
 }
 
 //loading pag inicial
-var i = setInterval(function () {
-    
-    clearInterval(i);
-  
+setTimeout(function () {
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
-
 }, 1000);
 
 
@@ -92,5 +88,15 @@ const setaOff = () => {
     else { seta.setAttribute('style', 'display: block;') }
 }
 
+// Animacao do conteinerAnimation
+const conteinerAnimation = () => {
+    let conteiner = document.querySelector('.containeranimation')
+    // if(window.scrollY > 250) {}
+    conteiner.style.animationName = "slide"
+    conteiner.style.animationTimingFunction = "ease"
+    conteiner.style.animationDuration = "2s"
+
+}
+
 // Ativa as funcoes
-window.addEventListener('scroll', function () { seta(), navBar() })
+window.addEventListener('scroll', () => { seta(), navBar(), conteinerAnimation() })
