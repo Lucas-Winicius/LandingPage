@@ -266,6 +266,8 @@ b {
     color: #d1d4dd;
 }
 
+
+
 section {
     background-color:  #272934;
     padding-top: 70px;
@@ -333,20 +335,6 @@ section p {
     text-align: center left;
     
 }
-
-
-
-
-
-.menuFixo {
-    position: fixed;
-    top: 0px;
-    background-color:  #1c1d25;
-    border-bottom: 1px solid  #343644;
-    
-}   
-
-
 
 
 

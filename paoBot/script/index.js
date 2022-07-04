@@ -64,12 +64,6 @@ const userLoad = () => {
 }
 
 
-// NavBarConfig
-const navBar = () => {
-    let menu = document.querySelector('#menu')
-    if (window.scrollY > 0) { menu.classList.add('menuFixo') }
-    else { menu.classList.remove('menuFixo') }
-}
 
 
 // Config Da Seta
@@ -88,15 +82,27 @@ const setaOff = () => {
     else { seta.setAttribute('style', 'display: block;') }
 }
 
+
+
 // Animacao do conteinerAnimation
 const conteinerAnimation = () => {
     let conteiner = document.querySelector('.containeranimation')
-    // if(window.scrollY > 250) {}
-    conteiner.style.animationName = "slide"
-    conteiner.style.animationTimingFunction = "ease"
-    conteiner.style.animationDuration = "2s"
-
+    let conteinerSection = document.querySelector('#containeranimation2')
+     if(window.scrollY > 230) {
+        conteiner.style.display = "block"
+        conteiner.style.animationName = "slide"
+        conteiner.style.animationTimingFunction = "ease"
+        conteiner.style.animationDuration = "1s"
+     } if(window.scrollY > 600) {
+        conteinerSection.style.display = "block"
+        conteinerSection.style.animationName = "slide"
+        conteinerSection.style.animationTimingFunction = "ease"
+        conteinerSection.style.animationDuration = "1s"
+     }
 }
 
+
+
+
 // Ativa as funcoes
-window.addEventListener('scroll', () => { seta(), navBar(), conteinerAnimation() })
+window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
