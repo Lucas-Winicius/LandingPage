@@ -36,7 +36,7 @@ const getLoggin = () => {
 setTimeout(function () {
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
-}, 1000);
+}, 1400);
 
 
 
@@ -86,18 +86,25 @@ const setaOff = () => {
 
 // Animacao do conteinerAnimation
 const conteinerAnimation = () => {
+    // A baixo contém os containers que seram animados -->
     let conteiner = document.querySelector('.containeranimation')
     let conteinerSection = document.querySelector('#containeranimation2')
-     if(window.scrollY > 230) {
+    let conteinerAside = document.querySelector('#containeranimation3')
+     if(window.scrollY > 360) {
         conteiner.style.display = "block"
         conteiner.style.animationName = "slide"
         conteiner.style.animationTimingFunction = "ease"
-        conteiner.style.animationDuration = "1s"
-     } if(window.scrollY > 600) {
+        conteiner.style.animationDuration = "3s"
+     } if(window.scrollY > 800) {
         conteinerSection.style.display = "block"
         conteinerSection.style.animationName = "slide"
         conteinerSection.style.animationTimingFunction = "ease"
-        conteinerSection.style.animationDuration = "1s"
+        conteinerSection.style.animationDuration = "3s"
+     } if(window.scrollY > 1400) {
+        conteinerAside.style.display = "block"
+        conteinerAside.style.animationName = "slide"
+        conteinerAside.style.animationTimingFunction = "ease"
+        conteinerAside.style.animationDuration = "3s"
      }
 }
 
