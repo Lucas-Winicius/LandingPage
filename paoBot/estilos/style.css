@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
@@ -14,12 +11,7 @@ body {
 }
 
 
-
-
-
-/*
-A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
-*/
+/*Animações do site, SETA-CONTAINERS*/
 @keyframes anim-stars {
     from {
         transform: translateY(-30px);
@@ -30,15 +22,10 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
     }
 }
 
-
-
-
-
 @keyframes animacao {
     from {color:#0e1015;}
     to {color:#d1d4dd}
 }
-
 
 @keyframes slide {
     0%  {
@@ -67,9 +54,8 @@ A BAIXO SE ENCONTRA A CONFIGURAÇÃO DE ANIMAÇÃO AO CARREGAR O SITE
 
 
 
-
-
 header {
+    /*Fundo do header para telas pequenas -1000px-*/
     background-image:  url(../img/fundoheaderM.jpg);
     color:#eff2fa;
     height: 600px;    
@@ -80,10 +66,7 @@ header {
     background-position: center;
 }
 
-
-
-
-
+/*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
         background-image: url(../img/fundoheader22.png);
@@ -99,26 +82,13 @@ header {
     text-align: center left;
     padding-top: 120px;
     font-family: 'Roboto', sans-serif;
-   
-    
 }
-
-
-
-
-
-
-
 
 .container h1 {
     font-size: 2em;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
-
-
-
-
 
 .container h2 {
     font-size: 1.7em;
@@ -150,9 +120,7 @@ p {
 
 
 
-/*
-CONFIGURAÇÕES DO NAVBAR---
-*/
+/*Configuração do NAVBAR*/
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
@@ -162,10 +130,6 @@ CONFIGURAÇÕES DO NAVBAR---
     text-transform: uppercase;
     text-shadow: 1px 1px 20px  #636b9981;
 }
-
-
-
-
 
 .navbar-toggler {
     border: none;
@@ -184,26 +148,14 @@ A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA 
     }
 }
 
-
-
-
-
 nav {
     border-bottom: 1px solid #393c4b;
 }
-
-
-
-
 
 #item-nav {
     color: #9093a1;;
     
 }
-
-
-
-
 
 #item-nav:hover {
     color:#cacee2;;
@@ -225,31 +177,19 @@ nav {
     margin-right: 10px;
     transition: 0.2s;
     margin-bottom: 10px;
-    
     width: 230px;
+    font-family: 'Roboto', sans-serif;
 }
-
-
-
-
 
 .estilobutt:hover {
     background-color: #b38137;
 }
-
-
-
-
 
 #colorDIFF {
     background-color: #3e404d;
     width: 140px;
 
 }
-
-
-
-
 
 #colorDIFF:hover {
     background-color:#494c5c;
@@ -260,7 +200,6 @@ nav {
 
 
 b {
-    
     color: #d1d4dd;
 }
 
@@ -278,12 +217,7 @@ section {
     background-repeat: no-repeat;
     margin-left: 0;
     text-align: center;
-   
 }
-
-
-
-
 
 @media(min-width:1000px) {
     section {
@@ -292,17 +226,9 @@ section {
     }
 }
 
-
-
-
-
 section h5 {
     color:  #e0e4fc;;
 }
-
-
-
-
 
 section h3 {
     text-align: center ;
@@ -313,25 +239,24 @@ section h3 {
     margin-bottom: 40px;
 }
 
-
-
-
-
 @media(min-width: 1000px) {
     section h3 {
         text-align: unset;
         margin-left:0;
     }
+    
 }
-
-
-
-
 
 section p {
     color: #c9cddb;
     text-align: center left;
-    
+    width: unset;
+}
+
+@media(min-width:1000px)  {
+    section p {
+        width: 60%;
+    }
 }
 
 
@@ -343,10 +268,6 @@ section p {
     margin: 0px 10px 10px 0;
     max-width: 340px;
 }
-
-
-
-
 
 @media (min-width:420px){
     .PAO {
@@ -366,19 +287,11 @@ section p {
     animation-delay: 0.4s;
 }
 
-
-
-
-
 @media(min-width:420px) {
     #seta {
         padding-top: 100px;
     }
 }
-
-
-
-
 
 .setapause{
   display: none;
@@ -396,7 +309,6 @@ section p {
     transition: 0.2s;
 }
 
-
 #login-estilo:hover {
     background-color:  #8b9cfd;
 }
@@ -408,10 +320,6 @@ section p {
 #item-nav {
     margin-right: 0;
 }
-
-
-
-
 
 .navbar-brand {
     margin-right: 0;
@@ -429,18 +337,12 @@ section p {
         text-align: center;
         cursor: pointer;
     }
-
-    
     #item-nav {
         margin-right: 7px;
     }
-
-
     .navbar-brand {
         margin-right: 500px;
     }
-
-
 }
 
 
@@ -457,33 +359,11 @@ article {
     padding: 20px;
 }
 
-
-
-
-
-
-
-
-
 .container-article h1 {
     font-size: 1.5em;
     padding: 20px;
     margin-top: 10px;
 }
-
-
-
-
-.imagem{
-    margin: auto;
-    width: 50px;
-  }
-  
-  #recursoA{
-    width: 100%;
-    padding-left: -400px;
-  }
-
 
 
 
@@ -495,12 +375,17 @@ article {
 }
 
 
+
+
+
 ul {
     list-style: none;
     margin: auto;
     color: #8a91a3;
-    
 }
+
+
+
 
 
 aside {
@@ -509,7 +394,6 @@ aside {
     padding: 30px;
     margin-bottom: 150px ;
 }
-
 
 @media(min-width: 1000px) {
     aside {
@@ -521,7 +405,6 @@ aside {
     text-align: center;
     margin-right: 0;
 }
-
 
 .container-aside h1 {
     color: #7386f5;
@@ -539,7 +422,10 @@ aside p {
 }
 
 
-#tt {
+
+
+/*Imagens do PAO*/
+#pao2 {
     float: unset;
     border: transparent thin solid;
     padding: unset;
@@ -550,7 +436,7 @@ aside p {
     margin-right: 0;
 }
 
-#tt2 {
+#pao1 {
     float: unset;
     border: unset;
     padding: unset;
@@ -558,7 +444,7 @@ aside p {
     margin: auto;
 }
 
-#tt3 {
+#pao3 {
     float: unset;
     border: unset;
     padding: 0;
@@ -567,15 +453,14 @@ aside p {
 }
 
 @media(min-width: 1000px) {
-    #tt2 {
+    #pao1 {
         float: right;
         border: transparent thin solid;
         padding: 5px;
         max-width: 25%;
         margin: unset;
     }
-
-    #tt3 {
+    #pao3 {
         float: right;
         border: transparent thin solid;
         padding: 5px;
@@ -585,7 +470,7 @@ aside p {
 }
 
 @media(min-width: 1000px) {
-    #tt {
+    #pao2 {
         max-width: 35%;
         padding: 5px;
         margin: 0px 10px 10px 0;
@@ -594,19 +479,20 @@ aside p {
         margin-right: 50px;
         float: left;
     }
-
     .container-aside {
         text-align: right;
         margin-right: 100px;
     }
-
 }
+
+
+
 
 
 main {
     text-align: center;
     padding: 50px;
-    margin-top: 2vw ;
+   
 }
 
 main h1 {
@@ -619,10 +505,12 @@ main h3 {
     color:#c9cddb;
 }
 
-
 main p {
     color: #c9cddb;
 }
+
+
+
 
 
 #spinner-Espac {
@@ -633,10 +521,12 @@ main p {
 
 
 
+
+
 #container-aside2 {
        margin-left:0;
        margin-top: -15vw;
-       padding: 20px;
+       padding: 40px;
        text-align: center;
 }
 
@@ -658,6 +548,7 @@ main p {
  }
 
  figure {
+    margin-top: 8vw;
     background-color: #1f2029;
     padding: 40px;
  }
@@ -669,7 +560,8 @@ main p {
 
  figure h1 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.7em;
 
  }
  
+

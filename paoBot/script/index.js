@@ -91,6 +91,8 @@ const conteinerAnimation = () => {
     let conteinerSection = document.querySelector('#containeranimation2')
     let conteinerAside = document.querySelector('#containeranimation3')
     let conteinerMain = document.querySelector('#containeranimation4')
+    let conteinerMain2 = document.querySelector('#containeranimation5')
+    let conteinerMain3 = document.querySelector('#containeranimation6')
      if(window.scrollY > 360) {
         conteiner.style.display = "block"
         conteiner.style.animationName = "slide"
@@ -111,10 +113,19 @@ const conteinerAnimation = () => {
         conteinerMain.style.animationName = "slide"
         conteinerMain.style.animationTimingFunction = "ease"
         conteinerMain.style.animationDuration = "3s"
+    }  if(window.scrollY > 2700) {
+        conteinerMain2.style.display = "block"
+        conteinerMain2.style.animationName = "slide"
+        conteinerMain2.style.animationTimingFunction = "ease"
+        conteinerMain2.style.animationDuration = "3s"
+} if(window.scrollY > 2900) {
+    conteinerMain3.style.display = "block"
+    conteinerMain3.style.animationName = "slide"
+    conteinerMain3.style.animationTimingFunction = "ease"
+    conteinerMain3.style.animationDuration = "3s"
 }
 
 }
-
 
 // Ativa as funcoes
 window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
