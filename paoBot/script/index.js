@@ -90,6 +90,7 @@ const conteinerAnimation = () => {
     let conteiner = document.querySelector('.containeranimation')
     let conteinerSection = document.querySelector('#containeranimation2')
     let conteinerAside = document.querySelector('#containeranimation3')
+    let conteinerMain = document.querySelector('#containeranimation4')
      if(window.scrollY > 360) {
         conteiner.style.display = "block"
         conteiner.style.animationName = "slide"
@@ -105,10 +106,14 @@ const conteinerAnimation = () => {
         conteinerAside.style.animationName = "slide"
         conteinerAside.style.animationTimingFunction = "ease"
         conteinerAside.style.animationDuration = "3s"
-     }
+     }  if(window.scrollY > 1900) {
+        conteinerMain.style.display = "block"
+        conteinerMain.style.animationName = "slide"
+        conteinerMain.style.animationTimingFunction = "ease"
+        conteinerMain.style.animationDuration = "3s"
 }
 
-
+}
 
 
 // Ativa as funcoes
