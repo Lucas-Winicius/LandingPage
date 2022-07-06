@@ -548,20 +548,26 @@ main p {
  }
 
  figure {
-    margin-top: 8vw;
-    background-color: #1f2029;
+    margin-top: 23vw;
+    background-image: url(../img/fundofigurenovo.png);
     padding: 40px;
+    height: 340px;
+    background-position: bottom;
  }
 
  #container-figure {
     text-align: center;
-    color: #c9cddb;
+    color: #e9ebf3;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
  }
 
  figure h1 {
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.9em;
 
  }
  
+
+
 

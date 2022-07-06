@@ -118,7 +118,7 @@ const conteinerAnimation = () => {
         conteinerMain2.style.animationName = "slide"
         conteinerMain2.style.animationTimingFunction = "ease"
         conteinerMain2.style.animationDuration = "3s"
-} if(window.scrollY > 2900) {
+} if(window.scrollY > 2780) {
     conteinerMain3.style.display = "block"
     conteinerMain3.style.animationName = "slide"
     conteinerMain3.style.animationTimingFunction = "ease"
