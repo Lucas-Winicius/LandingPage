@@ -127,6 +127,41 @@ const conteinerAnimation = () => {
 
 }
 
+const pegarLogin = () => {
+    const inputValue = document.querySelector('#user')
+    const loading = document.getElementById("loading")
+    const conteudo = document.getElementById("conteudo")
+    const login = document.getElementById("loginDiv")
+    if(inputValue.value == '') {
+        document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
+    } else {
+        userName = inputValue.value
+        userLoad()
+
+        
+        login.style.display = 'none'
+        login.innerHTML = ''
+        loading.style.display = 'block'
+        
+        setTimeout(() => {
+            loading.style.display = 'none'
+            conteudo.style.display = 'block'
+            
+        }, 2000)
+    }
+}
+
+const openLogin = () => {
+    const loading = document.getElementById("loading")
+    const conteudo = document.getElementById("conteudo")
+    const login = document.getElementById("loginDiv")
+    const loginHTML = '<link rel="stylesheet" href="estilos/login.css"><div id="conteiner"><h1>Login</h1><input type="text" name="user" id="user" placeholder="Usuario" maxlength="10"><button onclick="pegarLogin()">Prosseguir</button><p style="color: red; text-align: center; margin-top: 20px;" id="errorMessage"></p></div><script src="./script/index.js"></script>'
+
+    conteudo.style.display = 'none'
+    login.innerHTML = loginHTML
+    login.style.display = 'block'
+}
+
 // Ativa as funcoes
 window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
 
