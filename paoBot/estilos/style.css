@@ -75,7 +75,9 @@ header {
 }
 
 
-
+#headertela {
+    background-color: white;
+}
 
 
 .container {
@@ -571,3 +573,60 @@ main p {
 
 
 
+footer {
+    padding: 30px;
+    text-align: left;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+
+#container-footer {
+    margin-left: 0;
+}
+
+#conteudo-pos-container {
+    float: unset;
+    margin-right: unset;
+    margin-top: 20px;
+    color: white;
+}
+
+.div-pos {
+    display: unset;
+    
+}
+
+
+@media(min-width:1000px) {
+    #conteudo-pos-container {
+        float: right;
+        margin-right: 100px;
+        margin-top: -140px;
+        color: white;
+    }
+
+    .div-pos {
+        display: inline-block;
+        margin-right: 160px;
+    }
+    #container-footer {
+        margin-left: 20px;
+    }
+
+    footer {
+        padding-left: 70px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: #8a91a3;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #5f76f8;
+}

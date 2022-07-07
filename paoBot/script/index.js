@@ -129,3 +129,5 @@ const conteinerAnimation = () => {
 
 // Ativa as funcoes
 window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
+
+
