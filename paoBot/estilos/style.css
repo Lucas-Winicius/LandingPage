@@ -571,10 +571,13 @@ main p {
 
  figure h1 {
     font-weight: bold;
-    font-size: 1.9em;
-
+    font-size: 1.5em;
  }
- 
+ @media(min-width:1000px) {
+    figure h1 {
+        font-size: 1.9em;
+     }
+ }
 
 
 
