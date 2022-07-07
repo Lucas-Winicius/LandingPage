@@ -89,7 +89,7 @@ header {
 
 @media(min-width:1000px) {
     .container {
-        padding-top: 120px;
+        padding-top: 100px;
     }
 }
 
@@ -97,6 +97,7 @@ header {
     font-size: 2em;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .container h2 {
@@ -380,10 +381,14 @@ article {
 
 #loading {
     text-align: center;
-    margin-top: 20vw;
+    margin-top: 75vw;
 }
 
-
+@media(min-width: 500px) {
+    #loading {
+        margin-top: 20vw;
+    }
+}
 
 
 
@@ -644,4 +649,12 @@ a {
 
 a:hover {
     color: #5f76f8;
+}
+
+#letra-color {
+    color:  #95969e;
+}
+
+#letra-color:hover {
+    color: #d3d4e0;
 }
