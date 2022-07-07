@@ -1,13 +1,13 @@
 const footer = () => {
     let data = new Date
     let dataContent = { dia: data.getDate(), mes: data.getMonth(), ano: data.getFullYear(), hora: data.getHours(), min: data.getMinutes(), sec: data.getSeconds() }
-    const elementFooter = document.querySelector('footer')
+    const elementFooter = document.querySelector('#footerDetails')
     const emojis = ['&#x2800;', '&#x1F383;', '&#x1F920;', '&#x1F640;', '&#x1F928;']
     const informacoes = {copy: '&copy;', botName: 'Pão Bot', anoDeCriacao: 2021}    
    
 
 
-    elementFooter.setAttribute('style', 'text-align: center; background-color: #27293; color: white; padding: 4px; font-size: 0.8rem; font-weight: bolder;')
+    elementFooter.setAttribute('style', 'color: white; padding: 4px; font-size: 0.9rem;')
     elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}${emojis[randint(0, emojis.length - 1)]}`
     console.log(dataContent)
 
