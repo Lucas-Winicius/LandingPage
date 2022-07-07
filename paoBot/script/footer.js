@@ -7,7 +7,7 @@ const footer = () => {
    
 
 
-    elementFooter.setAttribute('style', 'color: white; padding: 4px; font-size: 0.9rem;')
+    //elementFooter.setAttribute('style', 'color: white; padding: 4px; font-size: 0.9rem;')
     elementFooter.innerHTML = `${informacoes.copy} ${informacoes.anoDeCriacao} - ${dataContent.ano} | ${informacoes.botName}${emojis[randint(0, emojis.length - 1)]}`
     console.log(dataContent)
 
