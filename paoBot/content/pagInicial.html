@@ -1,87 +1,146 @@
-<div id="loading" style="display: block">
-  <div class="spinner-grow text-light" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-  <div class="spinner-grow text-light" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-  <div class="spinner-grow text-light" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
+  <!--TELA DE LOADING-->
+  <div id="loading" style="display: block">
+    <div class="spinner-grow text-light" id="spinner-Espac"  role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
 </div>
+<!--CONTEUDO AONDE ELE VAI FICAR INVISIVEL ATÉ 2 SEGUNDOS PARA A ANIMAÇÃO DO LOADING-->
 <div id="conteudo" style="display: none">
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #272934;">
+  <!--NAVBAR-->
+  <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #272934;" >
     <div id="menu" class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" src="img/1206235.png"
-          alt=""> PãoBot.</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="manipularSeta()">
+      <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" src="img/1206235.png" alt=""> PãoBot.</a>
+      <button onclick="setaOff()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a id="item-nav" class="nav-link" aria-current="page" href="#">_>Comandos</a>
+        <ul  class="navbar-nav">
+          <li  class="nav-item">
+            <a id="item-nav"   class="nav-link" aria-current="page" href="#">_>Comandos</a>
           </li>
           <li class="nav-item">
-            <a id="item-nav" class="nav-link" href="#">Nosso Servidor</a>
+            <a id="item-nav"  class="nav-link" href="#">Nosso Servidor</a>
           </li>
           <li class="nav-item">
-            <a id="item-nav" class="nav-link" href="#">Suporte</a>
+            <a id="item-nav"  class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a id="item-nav"  class="nav-link" href="#">Suporte</a>
           </li>
           <li class="nav-item" id="login-estilo">
-            <a id="item-nav" class="nav-link" onclick="openPage('./content/login.html')">
-              <p id="userName" style="display: inline; color: #D1D4DD;"></p>
-            </a>
+            <a id="item-nav"  class="nav-link" onclick="openPage('./content/login.html')"><p id="userName" style="display: inline; color: #f8f8fa;">login</p></a>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <header>
-    <div class="container">
-      <h1>Olá, eu sou o <b style="color:#7386f5; text-decoration: underline #FEBC66;">Pão Bot</b>
-        <br> O bot mais carismático <br> do<b style="color: #7a44f8;"> Discord</b> :)
-      </h1>
-
-      <p id="p-header">Se você procura automatização, diversão <br> e funcionalidades,
-        seja <b>bem-vindo</b> você está no lugar certo!</p>
-      <button class="estilobutt" onclick="botaoAdicionar()">Adicionar no meu Servidor</button>
-      <button class="estilobutt" id="colorDIFF">Saiba Mais</button>
-    </div>
-    <div id="seta" class="setapause" style="display: block;">
-      <img width="60px" src="img/arrasta.png" alt="seta">
-    </div>
-  </header>
-  <article>
-    <div class="container-article">
-      <div id="foto-creator">
-        <a href="https://www.instagram.com/sr_pumpkin_/" target="_blank"><img id="criador" width="100px"
-            src="img/logolucas.png" alt="criador"></a>
-      </div>
-      <h1>O criador por trás de mim /></h1>
-    </div>
-  </article>
-  <section>
-    <h3>A mudança começa aqui.</h3>
-
-    <h5>Todos os servidores precisam de entretenimento e diversão para a sua comunidade <br>
-      só que uma pessoa atendendo a vontade de várias é meio complicado né?
-    </h5>
-    <p>Uma hora vamos cansar e quem vai garantir o entretenimento e diversão <br> para minha comunidade?
-      é ai que eu entro :)
-    </p>
-    <p>Com minhas diversas funcionalidades posso trazer tudo o que seu servidor precisa!
-      <br> além de mim possuir abilidades moderativas fazendo seu servidor ser seguro e agradável, <br> posso cuidar
-      da diversão dos seus membros deixando voçê livre para descansar.
-    </p>
-  </section>
-
-  <footer></footer>
-
-</div>
-
-<script src="script/footer.js"></script>
-<script src="script/index.js"></script>
+      </nav>
+      <header>
+        <div class="container">
+        <h1>Chegou a hora <br> de  transformar <br> o seu servidor! <br></h1>
+          <p id="p-header">Se você procura automatização, diversão  <br> e funcionalidades,
+          seja <b>bem-vindo</b> você veio ao lugar certo!</p>
+          <button class="estilobutt" onclick="botaoAdicionar()">Adicionar ao Servidor</button>
+          <button class="estilobutt" id="colorDIFF">Saiba Mais</button>
+        </div>
+        <div id="seta" class="setapause">
+          <img width="60px" src="img/arrasta.png" alt="seta">
+        </div>
+      </header>
+      <article>
+          <div class="container-article">
+           <h1>O Bot mais incrivel do <b style="  color: #7386f5;">Discord</b> <br> a um clique de distância.</h1>
+            <div style="display: flex;" >
+             <ul>
+              <div class="containeranimation" id="tty" style="display: none;">
+                <li>&#x2699 Moderação</li>
+                <br>
+                <li>&#x270F Customização</li>
+                <br>
+                <li>&#x1F5E3 Interatividade</li>
+              </div>
+             </ul>
+            </div>
+          </div>
+      </article>
+      <section>
+        <div id="containeranimation2" style="display: none;">
+          <img id="pao1" src="img/paocafe.png" alt="paoTomandocafé">
+          <h3>A mudança começa aqui.</h3>
+          <p>Todos os servidores precisam de entretenimento e diversão para a sua comunidade 
+            só que uma pessoa atendendo a vontade de várias é meio complicado né?
+            Uma hora vamos cansar e quem vai garantir o entretenimento e diversão  para minha comunidade?<br>
+            
+            Com minhas diversas funcionalidades posso trazer tudo o que seu servidor precisa!
+            além de mim possuir abilidades moderativas fazendo seu servidor ser seguro e agradável,  posso cuidar
+           da diversão dos seus membros deixando voçê livre para descansar.
+          </p>
+          <button class="estilobutt" style=" margin-top: 10px;">Ver Funções</button>
+        </div>
+      </section>
+      <aside>
+        <div id="containeranimation3" style="display: none;">
+          <div class="container-aside">
+            <img id="pao2" src="img/paomusica.png" alt="paoTocandoMusica">
+            <h1>Saca só a batida!</h1>
+            <p >Posso também reproduzir músicas e botar o servidor <br>  inteiro na pista  através de alguns  comandos disponíveis!</p>
+            <button class="estilobutt" style="margin-top: 10px;">Ver comandos</button>
+          </div>
+        </div>
+      </aside>
+      <aside>
+        <div id="containeranimation4" style="display: none;">
+          <div id="container-aside2">
+            <img id="pao3" src="img/paopolice.png" alt="paoDePolicia">
+            <h1>E a Moderação?</h1>
+            <p>Um bom Bot além de divertir sua comunidade precisa ajudar com a bagunça! <br> uma coisa que eu sou muito bom é na modereção, duvida? <br>
+           então clica ai em baixo para visualizar mais sobre</p>
+           <button class="estilobutt" style="margin-top: 10px ;">Ver sobre</button>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div id="containeranimation5" style="display: none;">
+          <h1>Ainda não acabou!</h1>
+        </div>
+        <div style="margin-top: 5vw ; display: none;" id="containeranimation6" >
+          <img id="pao-tenis" src="img/paotenisperso.png" alt="tenispao">
+          <h3>Sim eu tenho pés</h3>
+        </div>
+      </main>
+      <figure id="container-figure">
+        <h1>Bom, acho que voçê conseguiu ver do que <br> sou capaz então o que está esperando?</h1>
+        <button class="estilobutt" style="margin-top: 20px ;">Adicionar ao Servidor</button>
+      </figure>
+      <footer>
+        <div>
+          <img width="240px" src="img/paobotfooter.png" alt="">
+        </div>
+        <div id="container-footer">
+          <p>Um bot em formato de pão fazendo  <br>o que faz de melhor.</p>
+          <!--AQUI-->
+          <div id="footerDetails"> © 2021 - 2021 | Pão Bot</div>
+        </div>
+        <div id="conteudo-pos-container">
+          
+          <div class="div-pos">
+            <h1 style="font-size:1.2em ;">Pão bot</h1>
+            <p><a href="#">Mais sobre o bot</a></p>
+            <p><a href="#">Nosso servidor</a></p>
+            <p><a href="#">Suporte</a></p>
+          </div>
+          <div class="div-pos">
+            <h1 style="font-size:1.2em ;">Companhia</h1>
+            <p><a href="#">Desenvolvedor</a></p>
+            <p><a href="#">Contato</a></p>
+            <p><a href="#">Mais</a></p>
+          </div>
+        </div>
+      </footer>
+  </div>
+  <script src="script/footer.js"></script>
+ 
+  <script src="script/index.js"></script>
