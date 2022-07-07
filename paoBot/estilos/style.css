@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
@@ -8,6 +8,7 @@
 
 body {
     background-color:  #272934;
+    
 }
 
 
@@ -71,7 +72,7 @@ header {
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheader22.png);
+        background-image: url(../img/fundoheader23.png);
         text-align: unset;
 }
 }
@@ -89,9 +90,13 @@ header {
     }
 }
 
+nav {
+    margin-top: 10px;
+}
+
 .container h1 {
     font-size: 2em;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -154,9 +159,6 @@ A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA 
     }
 }
 
-nav {
-    border-bottom: 1px solid #393c4b;
-}
 
 #item-nav {
     color: #9093a1;;
@@ -217,7 +219,7 @@ section {
     padding-bottom: 80px;
     margin-top: 100px;
     font-size: 1.1em;
-    padding: 50px;
+    padding: 30px;
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -295,7 +297,7 @@ section p {
 
 @media(min-width:420px) {
     #seta {
-        padding-top: 100px;
+        padding-top: 25px;
     }
 }
 
@@ -347,7 +349,7 @@ section p {
         margin-right: 7px;
     }
     .navbar-brand {
-        margin-right: 500px;
+        margin-right: 400px;
     }
 }
 
@@ -360,7 +362,7 @@ article {
     height: 310px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    margin-top: 90px;
+    
     text-align: center;
     padding: 20px;
 }
@@ -540,7 +542,7 @@ main p {
 #container-aside2 {
        margin-left:0;
        margin-top: -15vw;
-       padding: 40px;
+       padding: 30px;
        text-align: center;
 }
 
@@ -619,7 +621,7 @@ footer {
     #conteudo-pos-container {
         float: right;
         margin-right: 100px;
-        margin-top: -150px;
+        margin-top: -155px;
         color: white;
     }
 
