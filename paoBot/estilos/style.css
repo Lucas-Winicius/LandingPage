@@ -64,6 +64,7 @@ header {
     background-repeat: no-repeat;
     background-color:  #272934;
     background-position: center;
+    
 }
 
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
@@ -82,8 +83,14 @@ header {
 
 .container {
     text-align: center left;
-    padding-top: 120px;
+    padding-top: 40px;
     font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width:1000px) {
+    .container {
+        padding-top: 120px;
+    }
 }
 
 .container h1 {
