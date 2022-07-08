@@ -5,7 +5,7 @@ let userName = 'Login'
 setTimeout(function () {
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
-}, 1400);
+}, 2000);
 
 
 // Botão de Adicionar o Bot

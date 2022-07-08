@@ -162,7 +162,9 @@ A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA 
 
 
 #item-nav {
-    color: #9093a1;;
+    color: #9fa2af;
+    font-size: 0.9em;
+    
     
 }
 
@@ -294,6 +296,13 @@ section p {
     width: 50px;
     animation: anim-stars 1s infinite;
     animation-delay: 0.4s;
+    filter: brightness(100%);
+}
+
+@media(min-width:1000px) {
+   #seta {
+    filter: brightness(0%);
+   } 
 }
 
 @media(min-width:420px) {
@@ -342,9 +351,10 @@ section p {
     #login-estilo {
         background-color:  #7386f5;
         border-radius: 7px;
-        width: 90px;
+        width: 70px;
         text-align: center;
         cursor: pointer;
+        
     }
     #item-nav {
         margin-right: 7px;
