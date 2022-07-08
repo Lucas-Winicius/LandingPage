@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     background-color:  #272934;
     
@@ -72,7 +73,7 @@ header {
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheaderpag3.png);
+        background-image: url(../img/fundoheaderpag.png);
         text-align: unset;
 }
 }
@@ -89,7 +90,7 @@ nav {
 
 @media(min-width:1000px) {
     .container {
-        padding-top: 80px;
+        padding-top: 50px;
     }
 }
 
@@ -295,14 +296,9 @@ section p {
     width: 50px;
     animation: anim-stars 1s infinite;
     animation-delay: 0.4s;
-    filter: brightness(100%);
 }
 
-@media(min-width:1000px) {
-   #seta {
-    filter: brightness(0%);
-   } 
-}
+
 
 @media(min-width:420px) {
     #seta {
