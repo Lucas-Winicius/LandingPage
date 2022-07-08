@@ -72,11 +72,14 @@ header {
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheader2def.png);
+        background-image: url(../img/fundoheaderdef2.png);
         text-align: unset;
 }
 }
 
+nav {
+    margin-top: 10px;
+}
 
 .container {
     text-align: center left;
@@ -86,7 +89,7 @@ header {
 
 @media(min-width:1000px) {
     .container {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 }
 
