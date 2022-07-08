@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 body {
     background-color:  #272934;
     
@@ -72,7 +72,7 @@ header {
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheaderpag.png);
+        background-image: url(../img/fundoheaderpag3.png);
         text-align: unset;
 }
 }
@@ -163,9 +163,8 @@ A CONFIGURÇÃO A SEGUIR É A QUE DESATIVA O ESPAÇAMENTO DA NAVBAR DA ESQUERDA 
 
 #item-nav {
     color: #9fa2af;
-   
-    
-    
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
 }
 
 #item-nav:hover {
@@ -325,6 +324,7 @@ section p {
     width: 0;
     text-align: unset;
     transition: 0.2s;
+    margin-left: 0;
 }
 
 #login-estilo:hover {
@@ -354,6 +354,7 @@ section p {
         width: 70px;
         text-align: center;
         cursor: pointer;
+        margin-left: 10px;
         
     }
     #item-nav {
