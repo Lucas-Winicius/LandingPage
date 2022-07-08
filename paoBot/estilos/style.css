@@ -72,7 +72,7 @@ header {
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
     header {
-        background-image: url(../img/fundoheaderdef2.png);
+        background-image: url(../img/fundoheaderpag.png);
         text-align: unset;
 }
 }
