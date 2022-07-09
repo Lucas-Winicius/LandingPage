@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--TELA DE LOADING-->
-  <div id="loading" style="display: block">
+  <div id="loading" style="display: none">
     <div class="spinner-grow text-light" id="spinner-Espac"  role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -27,7 +27,7 @@
       </div>
 </div>
 <!--CONTEUDO AONDE ELE VAI FICAR INVISIVEL ATÉ 2 SEGUNDOS PARA A ANIMAÇÃO DO LOADING-->
-<div id="conteudo" style="display: none">
+<div id="conteudo" style="display: block">
   <!--NAVBAR-->
   <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color:  #272934;" >
     <div id="menu" class="container-fluid">
@@ -50,7 +50,7 @@
             <a id="item-nav"  class="nav-link" href="#" onclick="pagina('index.html')">Suporte</a>
           </li>
           <li class="nav-item" id="login-estilo">
-            <a id="item-nav"  class="nav-link" onclick="openLogin()" name="loginValue" id="userName" style="color: #f8f8fa;">Login</a>
+            <a id="item-nav"  class="nav-link" onclick="openLogin()" name="userName" style="color: #f8f8fa;">Login</a>
           </li>
         </ul>
       </nav>
