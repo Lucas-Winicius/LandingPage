@@ -103,7 +103,7 @@ const pagina = link => {
     } else {
         conteudo.style.display = 'none'
         div.style.display = 'block'
-        div.innerHTML = `<iframe src="${link}" frameborder="1" width="100%" height="100%">`
+        div.innerHTML = `<iframe src="${link}" frameborder="1" style="width: 100%; height: 100vh;">`
     }
 }
 
