@@ -50,7 +50,7 @@
             <a id="item-nav"  class="nav-link" href="#">Suporte</a>
           </li>
           <li class="nav-item" id="login-estilo">
-            <a id="item-nav"  class="nav-link" onclick="openLogin()"  id="userName" style="color: #f8f8fa;">Login</a>
+            <a id="item-nav"  class="nav-link" onclick="openLogin()" name="loginValue" id="userName" style="color: #f8f8fa;">Login</a>
           </li>
         </ul>
       </nav>
@@ -131,7 +131,7 @@
       </main>
       <figure id="container-figure">
         <h1>Bom, acho que voçê conseguiu ver do que <br> sou capaz então o que está esperando?</h1>
-        <button class="estilobutt" style="margin-top: 20px ;">Adicionar ao Servidor</button>
+        <button class="estilobutt" style="margin-top: 20px ;" onclick="botaoAdicionar()">Adicionar ao Servidor</button>
       </figure>
       <footer>
         <div>
@@ -159,9 +159,8 @@
         </div>
       </footer>
   </div>
-<div id="loginDiv" style="display: none;"></div>
+<div id="OutrosConteudos" style="display: none;"></iframe></div>
   <script src="script/footer.js"></script>
- 
   <script src="script/index.js"></script>
 </body>
 </html>

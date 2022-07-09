@@ -10,13 +10,13 @@ setTimeout(function () {
 
 // Botão de Adicionar o Bot
 const botaoAdicionar = () => {
-    window.open('https://discord.com/api/oauth2/authorize?client_id=965678250531643472&permissions=8&scope=bot%20applications.commands', '_blank')
+    window.open('https://discord.com/api/oauth2/authorize?client_id=965678250531643472&permissions=8&scope=applications.commands%20bot', '_blank')
 }
 
 
 // Carrega o Nome do usuario
 const userLoad = () => {
-    document.querySelector('#userName').innerHTML = userName
+    document.getElementsByName('loginValue').innerText = userName
 }
 
 
@@ -63,7 +63,7 @@ const pegarLogin = () => {
     const inputValue = document.querySelector('#user')
     const loading = document.getElementById("loading")
     const conteudo = document.getElementById("conteudo")
-    const login = document.getElementById("loginDiv")
+    const login = document.getElementById("OutrosConteudos")
 
     if(inputValue.value == '') {
         document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
@@ -86,12 +86,25 @@ const pegarLogin = () => {
 
 const openLogin = () => {
     const conteudo = document.getElementById("conteudo")
-    const login = document.getElementById("loginDiv")
+    const login = document.getElementById("OutrosConteudos")
     const loginHTML = '<link rel="stylesheet" href="estilos/login.css"><div id="conteiner"><h1>Login</h1><input type="text" name="user" id="user" placeholder="Usuario" maxlength="10"><button onclick="pegarLogin()">Prosseguir</button><p style="color: red; text-align: center; margin-top: 20px;" id="errorMessage"></p></div><script src="./script/index.js"></script>'
-
+    
     conteudo.style.display = 'none'
     login.innerHTML = loginHTML
     login.style.display = 'block'
+}
+
+const pagina = link => {
+    const conteudo = document.getElementById("conteudo")
+    const div = document.getElementById("OutrosConteudos")
+    if(link == 'index.html') {
+        conteudo.style.display = 'block'
+        div.innerHTML = ''
+    } else {
+        conteudo.style.display = 'none'
+        div.style.display = 'block'
+        div.innerHTML = `<iframe src="${link}" frameborder="1" width="100%" height="100%">`
+    }
 }
 
 // Ativa as funcoes
