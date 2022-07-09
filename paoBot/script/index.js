@@ -2,7 +2,7 @@ let userName = 'Login'
 
 
 //loading pag inicial
-setTimeout(function () {
+setTimeout(function ()  {
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 }, 2500);
@@ -106,6 +106,7 @@ const pagina = link => {
         div.innerHTML = `<iframe src="${link}" frameborder="1" style="width: 100%; height: 100vh;">`
     }
 }
+
 
 // Ativa as funcoes
 window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
