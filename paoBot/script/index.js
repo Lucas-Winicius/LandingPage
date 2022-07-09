@@ -1,11 +1,20 @@
 let userName = 'Login'
 
+const conteudo = document.querySelector("#conteudo")
+const div = document.querySelector("#OutrosConteudos")
 
 //loading pag inicial
-setTimeout(function () {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("conteudo").style.display = "inline";
-}, 2500);
+const loader = () => {
+    document.getElementById("loading").style.display = "block"
+    document.getElementById("conteudo").style.display = "none"
+
+    setTimeout(function() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("conteudo").style.display = "inline";
+    }, 2000)
+}
+
+
 
 
 // Botão de Adicionar o Bot
@@ -16,7 +25,7 @@ const botaoAdicionar = () => {
 
 // Carrega o Nome do usuario
 const userLoad = () => {
-    document.getElementsByName('loginValue').innerText = userName
+    document.getElementsByName('userName').innerHTML = userName
 }
 
 
@@ -41,22 +50,22 @@ const setaOff = () => {
 const conteinerAnimation = () => {
 
     const animacao = (conteiner) => {
-
+        
         conteiner.style.display = "block"
         conteiner.style.animationName = "slide"
         conteiner.style.animationTimingFunction = "ease"
         conteiner.style.animationDuration = "3s"
         
     }
-
+    
     if(window.scrollY > 360)  { animacao(document.querySelector('.containeranimation'))  } 
     if(window.scrollY > 800)  { animacao(document.querySelector('#containeranimation2')) } 
     if(window.scrollY > 1400) { animacao(document.querySelector('#containeranimation3')) }
     if(window.scrollY > 1900) { animacao(document.querySelector('#containeranimation4')) }
     if(window.scrollY > 2700) { animacao(document.querySelector('#containeranimation5')) }
     if(window.scrollY > 2780) { animacao(document.querySelector('#containeranimation6')) }
-
-
+    
+    
 }
 
 const pegarLogin = () => {
@@ -64,13 +73,13 @@ const pegarLogin = () => {
     const loading = document.getElementById("loading")
     const conteudo = document.getElementById("conteudo")
     const login = document.getElementById("OutrosConteudos")
-
+    
     if(inputValue.value == '') {
         document.querySelector('#errorMessage').innerHTML = 'Insira um nome de usuario'
     } else {
         userName = inputValue.value
         userLoad()
-
+        
         
         login.style.display = 'none'
         login.innerHTML = ''
@@ -94,18 +103,46 @@ const openLogin = () => {
     login.style.display = 'block'
 }
 
-const pagina = link => {
-    const conteudo = document.getElementById("conteudo")
-    const div = document.getElementById("OutrosConteudos")
-    if(link == 'index.html') {
-        conteudo.style.display = 'block'
-        div.innerHTML = ''
-    } else {
-        conteudo.style.display = 'none'
-        div.style.display = 'block'
-        div.innerHTML = `<iframe src="${link}" frameborder="1" style="width: 100%; height: 100vh;">`
+const pagina = url => {
+    // if(url != 'indexx.html') {
+        //     document.getElementById("conteudo").style.display = 'none'
+        //     document.getElementById("OutrosConteudos").style.display = 'block'
+        
+        //     let xml = new XMLHttpRequest()
+        
+        //     xml.onreadystatechange = function () {
+    //         if (xml.readyState == 4 && xml.status == 200) {
+    //             document.querySelector('body').innerHTML = xml.responseText
+    //             // document.getElementById("OutrosConteudos").innerHTML = xml.responseText
+    //         }
+    //     }
+    
+    //     xml.open("GET", url, true)
+    
+    //     xml.send()
+    
+    // } else {
+        //     document.getElementById("conteudo").style.display = 'block'
+        //     document.getElementById("OutrosConteudos").style.display = 'none'
+        
+        //     document.getElementById("OutrosConteudos").innerHTML = ''
+        // }
+        
+        let xml = new XMLHttpRequest()
+        
+        xml.onreadystatechange = function () {
+        if (xml.readyState == 4 && xml.status == 200) {
+            document.querySelector('body').innerHTML = xml.responseText
+            // document.getElementById("OutrosConteudos").innerHTML = xml.responseText
+        }
     }
+    
+    xml.open("GET", url, true)
+    
+    xml.send()
+    
 }
 
 // Ativa as funcoes
 window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
+loader()
