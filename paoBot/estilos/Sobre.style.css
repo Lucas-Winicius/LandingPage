@@ -2,11 +2,13 @@
 
 #sobre-pagina {
     text-align: center;
+    margin-left: 0;
 }
 @media(min-width:1000px) {
     
 #sobre-pagina {
     text-align: unset;
+    margin-left: 80px;
 }
 }
 
