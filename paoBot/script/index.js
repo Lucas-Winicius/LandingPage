@@ -16,14 +16,14 @@ const loader = () => {
 }
 
 //Tela de loader das outras paginas-- Ajustar code----
-var i = setInterval(function () {
+//var i = setInterval(function () {
     
-    clearInterval(i);
+   // clearInterval(i);
   
-    document.getElementById("loading2").style.display = "none";
-    document.getElementById("conteudo2").style.display = "inline";
+   // document.getElementById("loading2").style.display = "none";
+   // document.getElementById("conteudo2").style.display = "inline";
 
-}, 500);
+//}, 500);
 
 
 
@@ -74,7 +74,7 @@ const conteinerAnimation = () => {
     if(window.scrollY > 1400) { animacao(document.querySelector('#containeranimation3')) }
     if(window.scrollY > 1900) { animacao(document.querySelector('#containeranimation4')) }
     if(window.scrollY > 2700) { animacao(document.querySelector('#containeranimation5')) }
-    if(window.scrollY > 2780) { animacao(document.querySelector('#containeranimation6')) }
+   
     
     
 }
@@ -121,7 +121,7 @@ const openLogin = () => {
     //fundo.setAttribute('style', 'background-color: white;')
 //}
 
-const pagina = url => {
+//const pagina = url => {
     // if(url != 'indexx.html') {
         //     document.getElementById("conteudo").style.display = 'none'
         //     document.getElementById("OutrosConteudos").style.display = 'block'
@@ -146,20 +146,20 @@ const pagina = url => {
         //     document.getElementById("OutrosConteudos").innerHTML = ''
         // }
         
-        let xml = new XMLHttpRequest()
+       // let xml = new XMLHttpRequest()
         
-        xml.onreadystatechange = function () {
-        if (xml.readyState == 4 && xml.status == 200) {
-            document.querySelector('body').innerHTML = xml.responseText
+       // xml.onreadystatechange = function () {
+       // if (xml.readyState == 4 && xml.status == 200) {
+           // document.querySelector('body').innerHTML = xml.responseText
             // document.getElementById("OutrosConteudos").innerHTML = xml.responseText
-        }
-    }
+     //   }
+   // }
     
-    xml.open("GET", url, true)
+   // xml.open("GET", url, true)
     
-    xml.send()
+   // xml.send()
     
-}
+//}
 
 
 
