@@ -57,23 +57,26 @@ body {
 
 
 
-header {
-    /*Fundo do header para telas pequenas -1000px-*/
+.fundoColorDifsite {
     background-image:  url(../img/fundoheaderM.jpg);
-    color:#eff2fa;
-    height: 600px;    
+    background-color:  #272934;
     text-align: center;
+}
+
+
+header {
+    color:#eff2fa;
+    height: 650px;    
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color:  #272934;
     background-position: center;
    
 }
 
 /*Fundo do header que ira ser aplicado em telas grandes +1000px+*/
 @media(min-width: 900px) {
-    header {
-        background-image: url(../img/fundofigure4.png);
+    .fundoColorDifsite {
+        background-image: url(../img/fundoheaderts.png);
         text-align: unset;
 }
 }
@@ -302,7 +305,7 @@ section p {
 
 @media(min-width:420px) {
     #seta {
-        padding-top: 20px;
+        padding-top: 8px;
     }
 }
 
@@ -383,15 +386,23 @@ article {
 
 
 
-
-
 #loading {
+    text-align: center;
+    margin-top: 75vw;
+}
+
+#loading2 {
     text-align: center;
     margin-top: 75vw;
 }
 
 @media(min-width: 500px) {
     #loading {
+        margin-top: 20vw;
+    }
+
+    #loading2 {
+        text-align: center;
         margin-top: 20vw;
     }
 }
@@ -464,6 +475,29 @@ aside p {
     max-width: 78%;
     pointer-events: none;
     margin: auto;
+}
+
+#paojoia {
+    float: unset;
+    border: unset;
+    padding: unset;
+    max-width: unset;
+    margin-top: unset;
+    margin-right: unset;
+    display: none;
+    pointer-events: none;
+}
+
+@media(min-width:1000px) {
+    #paojoia {
+        float: right;
+        border: transparent thin solid;
+        padding: 5px;
+        max-width: 50%;
+        margin-top: -80px;
+        margin-right: 80px;
+        display: block;
+    }
 }
 
 #pao3 {
@@ -578,6 +612,14 @@ main p {
     padding: 40px;
     height: 340px;
     background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+
+ @media(max-width:2000px) {
+    figure {
+        background-size: unset;
+    }
  }
 
  #container-figure {

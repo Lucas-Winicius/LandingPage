@@ -9,36 +9,96 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="estilos/style.css">
+   <link rel="stylesheet" href="estilos/Sobre.style.css">
    <title>Pão Bot-Discord</title>
 </head>
 <body>
-    <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color:  #272934;" >
-        <div id="menu" class="container-fluid">
-          <a class="navbar-brand"><img style="margin-right:14px ;" width="50px" height="50px" src="img/paologofav.png" alt="favicon"> PãoBot</a>
-          <button onclick="setaOff()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul  class="navbar-nav">
-              <li  class="nav-item">
-                <a id="item-nav"   class="nav-link" aria-current="page" href="pags/comandos.html">_>Comandos</a>
-              </li>
-              <li class="nav-item">
-                <a id="item-nav"  class="nav-link" href="#">Nosso Servidor</a>
-              </li>
-              <li class="nav-item">
-                <a id="item-nav" style="color: #cacedb;"  class="nav-link" href="sobre.html">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a id="item-nav"  class="nav-link"  >Suporte</a>
-              </li>
-              <li class="nav-item" id="login-estilo">
-                <a id="item-nav"  class="nav-link" onclick="openLogin()"  id="userName" style="color: #f8f8fa;">Login</a>
-              </li>
-            </ul>
-          </nav>
-          <button onclick="pagina('index.html')">a</button>
-          <script src="script/index.js"></script>
+   <!--TELA DE LOADING-->
+   <div id="loading2" style="display: block">
+    <div class="spinner-grow text-light" id="spinner-Espac"  role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+</div>
+    <div id="conteudo2" style="display: none">
+      <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color:  #272934;" >
+          <div id="menu" class="container-fluid">
+            <a class="navbar-brand" ><img style="margin-right:14px ;" width="50px" height="50px" src="img/paologofav.png" alt="favicon"> PãoBot</a>
+            <button onclick="setaOff()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul  class="navbar-nav">
+                <li  class="nav-item">
+                  <a id="item-nav"   class="nav-link" aria-current="page" href="pags/comandos.html">_>Comandos</a>
+                </li>
+                <li class="nav-item">
+                  <a id="item-nav"  class="nav-link" href="#">Nosso Servidor</a>
+                </li>
+                <li class="nav-item">
+                  <a id="item-nav" style="color: #cacedb;"  class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a id="item-nav"  class="nav-link" href="suporte.html">Suporte</a>
+                </li>
+                <li class="nav-item" id="login-estilo">
+                  <a id="item-nav"  class="nav-link" onclick="openLogin()"  id="userName" style="color: #f8f8fa;">Login</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="sobre-pagina">
+              <div id="container-sobre">
+                <h1>Sobre</h1>
+                <img id="paodeterno" src="img/paoterno.png" alt="pao de terno">
+                <h3>Mais sobre o Pão Bot</h3>
+                <p>O Pão Bot foi desenvolvido por Lucas Winicius,  o bot não só contém funções moderativas como também foi <br> programado para trazer entretenimento para a comunidade do seu servidor! Vale resaltar que <br> ele ainda está em constantes atualizações e adaptações então tenha paciência com ele.</p>
+              </div>
+            </div>
+            <div style="margin-top: 17vw;" id="container2-sobre">
+              <div style="padding-top: 50px;">
+                <div  id="sobre-pagina">
+                  <div id="container-sobre">
+                    <h3>Sobre esta Página</h2>
+                    <p>Esta aplicação foi criada com o objetivo de apresentarmos o Pão Bot, e quem participou também da fundação deste site <br> foi o Leonardo Henrique que colaborou construindo toda a parte visual.</p>
+                    <img id="criadores-sobre" src="img/leoelucas.png" alt="leo e lucas">
+                  </div>
+              </div>
+                
+            </div>
+            </div>
+                <div>
+                  <footer>
+                    <div>
+                      <img style="pointer-events: none;" width="220px" src="img/paofooter.png" alt="paofooter">
+                    </div>
+                    <div id="container-footer">
+                      <p>Um bot em formato de pão fazendo  <br>o que faz de melhor.</p>
+                      <!--AQUI-->
+                       <div id="footerDetails"> © 2021 - 2021 | Pão Bot</div>
+                    </div>
+                    <div id="conteudo-pos-container">
+                      
+                      <div class="div-pos">
+                        <h1 style="font-size:1.2em ;">Pão bot</h1>
+                        <p><a href="#">Mais sobre o bot</a></p>
+                        <p><a href="#">Nosso servidor</a></p>
+                        <p><a href="#">Suporte</a></p>
+                      </div>
+                      <div class="div-pos">
+                        <h1 style="font-size:1.2em ;">Companhia</h1>
+                        <p><a href="#">Desenvolvedor</a></p>
+                        <p><a href="#">Contato</a></p>
+                        <p><a href="#">Mais</a></p>
+                      </div>
+                    </div>
+                  </footer>
+    </div>
 
+      <script src="script/index.js"></script>
 </body>
 </html>

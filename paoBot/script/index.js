@@ -12,9 +12,18 @@ const loader = () => {
     setTimeout(function() {
         document.getElementById("loading").style.display = "none";
         document.getElementById("conteudo").style.display = "inline";
-    }, 2000)
+    }, 1000)
 }
 
+//Tela de loader das outras paginas-- Ajustar code----
+var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    document.getElementById("loading2").style.display = "none";
+    document.getElementById("conteudo2").style.display = "inline";
+
+}, 500);
 
 
 
@@ -105,6 +114,13 @@ const openLogin = () => {
     login.style.display = 'block'
 }
 
+//Script que altera a cor de fundo do site para o tema branco(IDEIA FUTURA..)
+//function MudarCorDeFundo() {
+    //const fundo = document.querySelector('#fundoColorDif')
+    //fundo.classList.remove('fundoColorDifsite')
+    //fundo.setAttribute('style', 'background-color: white;')
+//}
+
 const pagina = url => {
     // if(url != 'indexx.html') {
         //     document.getElementById("conteudo").style.display = 'none'
@@ -144,6 +160,7 @@ const pagina = url => {
     xml.send()
     
 }
+
 
 
 // Ativa as funcoes
