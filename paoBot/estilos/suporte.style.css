@@ -1,0 +1,154 @@
+#pao-suporte {
+    float: unset;
+    border: unset;
+    padding: unset;
+    max-width: 75%;
+    margin-top: unset;
+    margin: auto;
+    display: none;
+}
+
+@media(min-width:1000px) {
+    #pao-suporte {
+        float: left;
+        border: transparent thin solid;
+        padding: 5px;
+        max-width: 25%;
+        margin-top: -50px;
+        display: block;
+    }
+    
+}
+
+#container-suporte {
+    margin-top: 50px;
+    margin-left: unset;
+    text-align: center;
+}
+
+@media(min-width:1000px) {
+    #container-suporte {
+        margin-top: 50px;
+        margin-left: 110px;
+        text-align: unset;
+    }
+    
+}
+
+#conteudo-sobre {
+    padding: 30px;
+}
+
+#conteudo-sobre h1 {
+    color: #7386f5;
+    font-weight: bold;
+}
+
+#conteudo-sobre p {
+    color: #c9cddb;
+    font-size: 1.1em;
+    
+}
+
+@media(min-width:1000px) {
+    #conteudo-sobre p {
+        color: #c9cddb;
+        font-size: 1.1em;
+        width: 980px;
+    }
+}
+
+#container-server {
+    margin-top: 100px;
+    padding: 30px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+   margin: auto;
+}
+
+@media(min-width:1000px) {
+    #container-server {
+        margin-top: 100px;
+        padding: 30px;
+        display: inline-block;
+        margin-left: -210px;
+        margin-right: 230px;
+       
+    }
+    
+}
+
+#container-server h3 {
+    color: #7386f5;
+    font-weight: bold;
+}
+
+#container-server p {
+    color: #c9cddb;
+}
+
+#border-lateral {
+    border-right: unset;
+    
+}
+
+#p-suporte {
+   max-width:410px;
+   
+}
+
+@media(min-width:1200px)  {
+    #p-suporte {
+       max-width: 344px;
+    }
+
+    #border-lateral {
+        
+        padding: 20px;
+    }
+}
+
+#caixa-server {
+    background-color: #1f2029;
+    padding:20px;
+    border-radius: 6px;
+}
+
+
+#caixa-server h4 {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#caixa-server h5 {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#server-logo {
+    float: left;
+    border: transparent thin solid;
+     padding: 5px;
+    max-width: 17%;
+    margin-top: -2px;
+}
+
+#botao-server {
+    background-color: #3ba55d;
+    border-style: none;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 3px;
+    margin-left:0.9vw;
+}
+
+#botao-server:hover  {
+    background-color: #30834a;
+    text-decoration: underline;
+}
