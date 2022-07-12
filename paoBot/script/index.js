@@ -29,8 +29,8 @@ const loader = () => {
 
 
 // Botão de Adicionar o Bot
-const botaoAdicionar = () => {
-    window.open('https://discord.com/api/oauth2/authorize?client_id=965678250531643472&permissions=8&scope=applications.commands%20bot', '_blank')
+const redirecionar = url => {
+    window.open(url, '_blank')
 }
 
 
@@ -61,22 +61,20 @@ const setaOff = () => {
 const conteinerAnimation = () => {
 
     const animacao = (conteiner) => {
-        
+
         conteiner.style.display = "block"
         conteiner.style.animationName = "slide"
         conteiner.style.animationTimingFunction = "ease"
         conteiner.style.animationDuration = "3s"
-        
+
     }
-    
+
     if(window.scrollY > 360)  { animacao(document.querySelector('.containeranimation'))  } 
     if(window.scrollY > 800)  { animacao(document.querySelector('#containeranimation2')) } 
     if(window.scrollY > 1400) { animacao(document.querySelector('#containeranimation3')) }
     if(window.scrollY > 1900) { animacao(document.querySelector('#containeranimation4')) }
     if(window.scrollY > 2700) { animacao(document.querySelector('#containeranimation5')) }
-   
-    
-    
+
 }
 
 const pegarLogin = () => {
