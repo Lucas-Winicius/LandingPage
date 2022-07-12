@@ -69,7 +69,14 @@
 }
 
 .border-sobre {
-    border: 0.1pc solid   #575a6d;
+    border: none;
     width: 67vw;
     margin-top: 20px;
+}
+
+@media(min-width:1000px) {
+    .border-sobre {
+        border: 0.1pc solid   #575a6d;
+    }
+    
 }

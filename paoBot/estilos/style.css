@@ -475,6 +475,7 @@ aside p {
     max-width: 78%;
     pointer-events: none;
     margin: auto;
+    margin-right: unset;
 }
 
 #paojoia {
@@ -516,6 +517,7 @@ aside p {
         padding: 5px;
         max-width: 25%;
         margin: unset;
+        margin-right: 55px;
     }
     #pao3 {
         float: right;
