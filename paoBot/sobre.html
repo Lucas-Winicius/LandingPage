@@ -13,9 +13,89 @@
    <title>Pão Bot-Discord</title>
 </head>
 <body>
-  <div style="text-align: center; color: #fdafaf; margin-top: 50px;">
-    <h2>Sinto muito mais isso não está disponível</h1>
-    <img width="400px" src="img/paosono.png" alt="paosono">
+    <!--TELA DE LOADING-->
+    <div id="loading2" style="display: block">
+      <div class="spinner-grow text-light" id="spinner-Espac"  role="status">
+          <span class="visually-hidden"></span>
+        </div>
+        <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+        <div class="spinner-grow text-light" id="spinner-Espac" role="status">
+          <span class="visually-hidden"></span>
+        </div>
   </div>
+  <div id="conteudo2" style="display: none">
+    <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color:  #272934;" >
+      <div id="menu" class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img style="margin-right:14px ;" width="50px" height="50px" src="img/paologofav.png" alt="favicon"> PãoBot</a>
+        <button onclick="setaOff()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul  class="navbar-nav">
+            <li  class="nav-item">
+              <a id="item-nav"   class="nav-link" aria-current="page" href="comandos.html">_>Comandos</a>
+            </li>
+    
+            <li class="nav-item">
+              <a id="item-nav" style="color: #f8f8fa;"  class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a id="item-nav"  class="nav-link" href="suporte.html">Suporte</a>
+            </li>
+            <li class="nav-item" id="login-estilo">
+              <a id="item-nav"  class="nav-link" onclick="openLogin()" name="userName" style="color: #f8f8fa;">Login</a>
+            </li>
+          </ul>
+        </nav>
+  
+     <div id="container-sobre">
+      <div id="conteudo-sobre">
+        <h1>Sobre</h1>
+        <img id="pao1-sobre" src="img/paoterno.png" alt="pao de terno">
+        <h2>Sobre o Pão Bot</h2>
+        <p>O Pão Bot foi desenvolvido por <a href="#"> Lucas Winicius</a> o bot além de conter funções moderativas tornando seu servidor em um ambiente totalmente seguro, ele também pode entreter sua comunidade! Vale ressaltar que o Pão bot tem atualizações constantes e ainda está em desenvolvimento então tenha paciência com ele :) </p>
+        <div class="border-sobre"></div>
+      </div>
+     </div>
+     <div style="margin-top: -50px;">
+       <div id="container-sobre">
+        <div id="conteudo-sobre">
+          <img id="pao1-sobre" src="img/leoelucas.png" alt="pao de terno">
+          <h2>Sobre o Site</h2>
+          <p>Este site foi criado com a finalidade de apresentarmos o Pão Bot e deixarmos voçê ter a chance de adicioná-lo em seu servidor, outra pessoa que ajudou na criação desta aplicação foi o Leonardo Henrique que ficou responsável por toda a parte visual.</p>
+          <div class="border-sobre"></div>
+        </div>
+       </div>
+     </div>
+     <footer>
+      <div>
+        <img style="pointer-events: none;" width="220px" src="img/paofooter.png" alt="paofooter">
+      </div>
+      <div id="container-footer">
+        <p>Um bot em formato de pão fazendo  <br>o que faz de melhor.</p>
+        <!--AQUI-->
+         <div id="footerDetails"> © 2021 - 2021 | Pão Bot</div>
+      </div>
+      <div id="conteudo-pos-container">
+        
+        <div class="div-pos">
+          <h1 style="font-size:1.2em ;">Pão bot</h1>
+          <p><a href="sobre.html#sobreOBot">Mais sobre o bot</a></p>
+          <p><a href="#">Nosso servidor</a></p>
+          <p><a href="#">Suporte</a></p>
+        </div>
+        <div class="div-pos">
+          <h1 style="font-size:1.2em ;">Companhia</h1>
+          <p><a href="#">Desenvolvedor</a></p>
+          <p><a href="#">Contato</a></p>
+          <p><a href="#">Mais</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+       <script src="script/footer.js"></script>
+       <script src="script/indexSettings.js"></script>
 </body>
 </html>

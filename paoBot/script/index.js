@@ -6,14 +6,15 @@ const div = document.querySelector("#OutrosConteudos")
 //loading pag inicial
 
 const loader = () => {
-    document.getElementById("loading").style.display = "block"
-    document.getElementById("conteudo").style.display = "none"
+    document.querySelector("#loading").style.display = "block"
+    document.querySelector("#conteudo").style.display = "none"
 
     setTimeout(function() {
-        document.getElementById("loading").style.display = "none";
-        document.getElementById("conteudo").style.display = "inline";
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("#conteudo").style.display = "inline";
     }, 1000)
 }
+
 
 //Tela de loader das outras paginas-- Ajustar code----
 //var i = setInterval(function () {
@@ -162,7 +163,7 @@ const openLogin = () => {
 //}
 
 
-
+//handleEvent
 // Ativa as funcoes
-window.addEventListener('scroll', () => { seta(), conteinerAnimation() })
-loader()
+window.addEventListener('scroll', () => { seta(), conteinerAnimation()  })
+loader() 
