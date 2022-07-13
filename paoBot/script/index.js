@@ -41,6 +41,20 @@ const userLoad = () => {
 }
 
 
+const verFuncoes = () => {
+    window.location.href='./funcoes.html'
+}
+
+
+ const verComandos = () => {
+    window.location.href='./comandos.html'
+}
+
+const verSobre = () => {
+    window.location.href='./sobre.html'
+}
+
+
 // Config Da Seta
 const seta = () => {
     let seta = document.querySelector('#seta')
